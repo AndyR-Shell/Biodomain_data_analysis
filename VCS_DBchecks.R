@@ -34,8 +34,33 @@ test_merge = merge(VCS_project_data, VCS_trading_data, by="project_ID", all=T)
 
 test_merge = test_merge[complete.cases(test_merge$Total.Credits),] # Remove rows with no data (i.e. likely the 32 rows mentioned above)
 
-# Quick plot check...
+# Quick plot checks...
 library(tidyverse)
 ggplot(test_merge, aes(x=Vintage, y=Total.Credits, fill=Sub.Project.Type)) +
   geom_bar(stat='identity') +
   facet_wrap(~Status)
+
+test_merge$Date.Year = format(test_merge$Date, "%Y")
+
+ggplot(test_merge %>% arrange(Vintage), aes(x=Date.Year, y=Total.Credits, fill=Vintage)) +
+  geom_bar(stat='identity') +
+  facet_wrap(~Status) +
+  theme(axis.text.x = element_text(angle=45, hjust=0, vjust=0))
+
+library(plyr)
+test_summary = ddply(test_merge, c("Vintage", "project_ID", "Status", "Sub.Project.Type"), summarise,
+      n = length(Total.Credits),
+      avg = mean(Total.Credits),
+      sum = sum(Total.Credits))
+
+library(plotly)
+p.test = ggplot(test_summary[test_summary$Status=="Retired" & test_summary$Sub.Project.Type != "Methane Capture",],
+       aes(x=Vintage, y=avg/1000, colour=project_ID, size=n)) +
+  geom_point() +
+  ggtitle("Size of bubble = Number of transactions") +
+  facet_wrap(~Sub.Project.Type) +
+  ylab("Average transaction size for project vintage ('000s VCUs)") + 
+  theme_bw() +
+  theme(legend.title = element_blank())
+
+ggplotly(p.test) # Size of bubble is number of transations
