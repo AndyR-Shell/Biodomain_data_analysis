@@ -6,10 +6,16 @@
 # Initial data import from SharePoint folder "Credited_Projects"
 SPDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions"
 TopDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions//Credited_Projects"
+GitDataDir = "/data"
 
 ### Import VCS database compiled by Biodomain with detailed info from PDDs - up to date as of June 2019
-VCS_project_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"), header=T)
-VCS_annual_ER_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_annual_ERs.csv"), header=T)
+if(is.error(read.csv(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"), header=T))) { # If can't connect to sharepoint then look for local data files
+  VCS_project_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"), header=T)
+  VCS_annual_ER_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_annual_ERs.csv"), header=T)
+} else {
+  VCS_project_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"), header=T)
+  VCS_annual_ER_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_annual_ERs.csv"), header=T)
+}
 
 ### Import trading data for all issued and retired credits up to June 30th 2020 for VCS, CAR, ACR, GS and CDM
 # NOTE - This is a very very large file and will take a while to read in
