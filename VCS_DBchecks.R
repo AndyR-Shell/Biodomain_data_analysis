@@ -6,20 +6,29 @@
 # Initial data import from SharePoint folder "Credited_Projects"
 SPDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions"
 TopDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions//Credited_Projects"
-GitDataDir = "/data"
+Local_DataDir = "data"
+
+# Sometimes RStudio won't connect to SharePoint. In the first instance, try to connecting to VPN (if off-site)
+# Otherwise, we will need to load a local (stored on GitHub) version to work from. NOTE - This may not be up to date!
+# There isn't a simple base R function that does "if(error) else..." so we need to write our own function around "try()"
+SP_readCSV = function (file.name, has_header=T) { # Requires full directory for SharePoint given as 'file.name'. Also assumes we're using read.csv so has a header condition
+  file = try(read.csv(file.name, header = has_header)) # First attempt to load from SharePoint
+  if (class(file) == "try-error") { # If no error then all good
+    cat("Could not read from SharePoint, using local version. NOTE - This may not be the most up-to-date version of", basename(file.name), "\n") # Just a print to the console to show info
+    file = read.csv(file.path(Local_DataDir, basename(file.name)), header = has_header) # Read from local directory location instead - NOTE: Assumes exact same file name and not in sub-folder unless specified at the top
+  } else {
+    cat("Successfully read the file from SharePoint - using most up-to-date version of", basename(file.name), "\n") # Simple print to console to inform us
+  } # End of if statement
+  file # Return the resulting file!
+} # End of function
 
 ### Import VCS database compiled by Biodomain with detailed info from PDDs - up to date as of June 2019
-if(is.error(read.csv(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"), header=T))) { # If can't connect to sharepoint then look for local data files
-  VCS_project_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"), header=T)
-  VCS_annual_ER_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_annual_ERs.csv"), header=T)
-} else {
-  VCS_project_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"), header=T)
-  VCS_annual_ER_data = read.csv(file.path(TopDir, "VCS_Projects", "VCS_annual_ERs.csv"), header=T)
-}
+VCS_project_data = SP_readCSV(file.path(TopDir, "VCS_Projects", "VCS_projects_summary.csv"))
+VCS_annual_ER_data = SP_readCSV(file.path(TopDir, "VCS_Projects", "VCS_annual_ERs.csv"))
 
 ### Import trading data for all issued and retired credits up to June 30th 2020 for VCS, CAR, ACR, GS and CDM
 # NOTE - This is a very very large file and will take a while to read in
-trading_data = read.csv(file.path(TopDir, "CarbonCredits_trading.csv"), header=T)
+trading_data = SP_readCSV(file.path(TopDir, "CarbonCredits_trading.csv"))
 
 ### Check that a merge works - subset to VCS and to NBS only
 VCS_trading_data = trading_data[trading_data$Standard == "VCS" & trading_data$Nature.Based.vs.Non.Nature.Based == "Nature Based",]
