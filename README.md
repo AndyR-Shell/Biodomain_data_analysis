@@ -1,3 +1,3 @@
-# VCS Database
+# NBS Potentials
 
-This branch of the Biodomain data analysis repository concerns all use and analysis of VCS project data. Note that the final outputs from this work will be published as part of the MyMaps VCS web apps (when using highly spatial data - e.g. polygons of project areas), or the Power BI web app.
+This branch of the Biodomain data analysis repository concerns all use and analysis of NBS potentials data. This includes global and national analyses. This is the first place repository for data that will ultimately inform the Shell scenarios work and a published paper on the temporal profiles of NBS potentials.
