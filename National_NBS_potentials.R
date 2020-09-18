@@ -48,7 +48,8 @@ tmpdf = data.frame(tmpdf, nat_ters_lim[match(tmpdf$ISO3, nat_ters_lim$ISO3),]) #
 world_spdf@data = tmpdf # Add back into the spdf
 
 ### Choose what you want to visualize
-NBS_to_plot = "Improved plantations"
+colnames(tmpdf) # See options
+NBS_to_plot = "Improved plantations" # Must be spelt exactly as shown in column heading but .s can be replaced by spaces
 
 ### Set up to properly visualize spatial data for the chosen column
 tmp = world_spdf # Create a subset of the spdf that you can visualize specific to the column chosen
