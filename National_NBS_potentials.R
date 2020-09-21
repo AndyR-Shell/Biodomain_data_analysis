@@ -5,6 +5,7 @@
 library(tidyverse)
 library(rgdal)
 library(leaflet)
+library(shiny)
 
 # Initial data import from SharePoint folder "Credited_Projects"
 SPDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions"
@@ -48,31 +49,63 @@ tmpdf = data.frame(tmpdf, nat_ters_lim[match(tmpdf$ISO3, nat_ters_lim$ISO3),]) #
 world_spdf@data = tmpdf # Add back into the spdf
 
 ### Choose what you want to visualize
-colnames(tmpdf) # See options
-NBS_to_plot = "Improved plantations" # Must be spelt exactly as shown in column heading but .s can be replaced by spaces
+plot_options = c(colnames(nat_ters_lim[2:ncol(nat_ters_lim)]), colnames(nat_other[3:ncol(nat_other)]))
+# If running below manually use NBS_to_plot
+#colnames(tmpdf) # See options
+#NBS_to_plot = "Improved plantations" # Must be spelt exactly as shown in column heading but .s can be replaced by spaces
 
-### Set up to properly visualize spatial data for the chosen column
-tmp = world_spdf # Create a subset of the spdf that you can visualize specific to the column chosen
-activity_glob = gsub(pattern = " ", replacement = ".", NBS_to_plot) # Simply take the chosen column and replace spaces with .s
-topval = floor(quantile(tmp@data[[activity_glob]], probs=0.99, na.rm = T)) # Obtain the maximum value to set your colour scale to
-mybins=c(0,topval/20,topval/10,topval/5,topval/2,topval,Inf) # Derive the bins of colours you want to use (default set to 0.05, 0.1, 0.2 and 0.5)
-mypalette = colorBin( palette="YlOrBr", domain=tmp@data[[activity_glob]], na.color="grey", bins=mybins) # Generate the palette for that scale
+########################################
+### === SIMPLE SHINY APP TO VIEW === ###
+########################################
 
-# If you want, create a HTML style popup that will appear on hover over each country (can use other columns from nat_other for example)
-mytext=paste("<span style='color: salmon;'><strong>", tmp@data$Country,"</strong></span><br/>", "Area (Mha): ", round(tmp@data$Land.Area/1000,1), "<br/>", "2018 Population (M): ", round(tmp@data$Population/1000, 2),
-             "<br/>Maximum ", activity_glob, " ERs (Mt CO2e):", round(tmp@data[[activity_glob]],2),
-             sep="") %>%
-  lapply(htmltools::HTML) # Simply ensures it's in proper HTML format
+# User interface section
+ui <- fluidPage(
+  # App title ----
+  titlePanel("NBS National Potential Mapping"),
+  # Top row that just includes a dropdown ----
+  fluidRow(column(12,
+                  # Input: Dropdown of the columns that you can plot
+                  selectInput(inputId = "Plot_variable", label = "What do you want to plot?", choices = plot_options, multiple = F)
+  )),
+  # Main row for displaying outputs ----
+  fluidRow(
+    # Output: Leaflet ----
+    leafletOutput(outputId = "Output_map", width="100%")
+  )
+)
 
-### Create basic choropleth map with leaflet
-leaflet(tmp) %>% 
-  addTiles()  %>% 
-  setView( lat=10, lng=0 , zoom=2) %>%
-  addPolygons( 
-    fillColor = ~mypalette(tmp@data[[activity_glob]]), stroke=TRUE, fillOpacity = 0.9, color="white", weight=0.3,
-    highlightOptions = highlightOptions(color = "white", weight = 2, bringToFront = TRUE, fillColor = "black", fillOpacity = 0.3),
-    label = mytext,
-    labelOptions = labelOptions( style = list("font-weight" = "normal", padding = "3px 8px"), textsize = "13px", direction = "auto")
-  ) %>%
-  addLegend( pal=mypalette, values=~tmp@data[[activity_glob]], opacity=0.9, title = paste0(activity_glob, " potential (Mt CO2e)"), position = "bottomleft" )
+# Server-side section
+server <- function(input, output, session) {
+  
+  output$Output_map = renderLeaflet({
+    
+    ### Set up to properly visualize spatial data for the chosen column
+    tmp = world_spdf # Create a subset of the spdf that you can visualize specific to the column chosen
+    activity_glob = input$Plot_variable # eventReactive(gsub(pattern = " ", replacement = ".", input$Plot_variable)) # Simply take the chosen column and replace spaces with .s
+    topval = floor(quantile(tmp@data[[activity_glob]], probs=0.99, na.rm = T)) # Obtain the maximum value to set your colour scale to
+    mybins=c(0,topval/20,topval/10,topval/5,topval/2,topval,Inf) # Derive the bins of colours you want to use (default set to 0.05, 0.1, 0.2 and 0.5)
+    mypalette = colorBin( palette="YlOrBr", domain=tmp@data[[activity_glob]], na.color="grey", bins=mybins) # Generate the palette for that scale
+    
+    # If you want, create a HTML style popup that will appear on hover over each country (can use other columns from nat_other for example)
+    mytext=paste("<span style='color: salmon;'><strong>", tmp@data$Country,"</strong></span><br/>", "Area (Mha): ", round(tmp@data$Land.Area/1000,1), "<br/>", "2018 Population (M): ", round(tmp@data$Population/1000, 2),
+                 "<br/>Maximum ", activity_glob, " ERs (Mt CO2e):", round(tmp@data[[activity_glob]],2),
+                 sep="") %>%
+      lapply(htmltools::HTML) # Simply ensures it's in proper HTML format
+    
+    ### Create basic choropleth map with leaflet
+    leaflet(tmp) %>% 
+      addTiles()  %>% 
+      setView( lat=10, lng=0 , zoom=2) %>%
+      addPolygons( 
+        fillColor = ~mypalette(tmp@data[[activity_glob]]), stroke=TRUE, fillOpacity = 0.9, color="white", weight=0.3,
+        highlightOptions = highlightOptions(color = "white", weight = 2, bringToFront = TRUE, fillColor = "black", fillOpacity = 0.3),
+        label = mytext,
+        labelOptions = labelOptions( style = list("font-weight" = "normal", padding = "3px 8px"), textsize = "13px", direction = "auto")
+      ) %>%
+      addLegend( pal=mypalette, values=~tmp@data[[activity_glob]], opacity=0.9, title = paste0(activity_glob, " potential (Mt CO2e)"), position = "bottomleft" )
+    
+  })
+  
+}
 
+shinyApp(ui, server)
