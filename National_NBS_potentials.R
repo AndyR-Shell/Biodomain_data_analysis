@@ -77,6 +77,10 @@ ui <- fluidPage(
 # Server-side section
 server <- function(input, output, session) {
   
+  session$onSessionEnded(function() {
+    stopApp()
+  })
+  
   output$Output_map = renderLeaflet({
     
     ### Set up to properly visualize spatial data for the chosen column
