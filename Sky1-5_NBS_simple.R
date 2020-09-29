@@ -151,7 +151,7 @@ for(NBS in TNCfull_NBSlist) { # Loop over each NBS pathway
 adoption_Max_alldata = tmp_output_Max
 
 ##### 
-# COMBINE THE ADOPTION AND TER DATASETS TO HAVE SINGLE DATAFRAMES TO WORK WITH
+# FINAL FORMATTING TO HELP CLARITY AND WHEN NECESSARY COMBINE DATA FROM ABOVE
 #####
 
 adoption_Max_alldata$threshold = "Maximum" # Add column for the threshold
@@ -163,6 +163,10 @@ TERs_Max_alldata$adoption_scenario = adoption_input_selection # Add adoption sce
 ggplot(TERs_Max_alldata, aes(x=year, y=TERs_MtCO2, colour=NBS_short_name)) +
   geom_line() +
   facet_wrap(~threshold)
+
+#####
+### CLEAN UP AND SAVE AS NECESSARY
+#####
 
 # Remove all unnecessary objects
 rm(list=ls(pattern = "^tmp"))
