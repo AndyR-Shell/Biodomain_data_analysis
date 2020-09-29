@@ -1,0 +1,24 @@
+NBS_desc,NBS_group,NBS_short_name,extent_rate,global_extent,global_ter,ters_100,ters_10,intensity_type,ter_intensity,boreal_intensity,temperate_intensity,subtropical_intensity,tropical_intensity,above_perc,amendment,restore_type,active_remove,prop_co2,prop_ch4,prop_n2o
+Agroforestry,Forest,Agro,0,608,1040,439,0,average,1.710526316,,,,,60,,Manage,1,1,0,0
+Avoided woodfuel,Forest,Woodfuel,0,1400,367,110,0,average,0.262142857,,,,,100,,Manage,0,1,0,0
+Better cropping,Agriculture,Crops,0,352,413,372,248,average,1.173295455,,,,,20,,Manage,1,1,0,0
+Biochar,Agriculture,Biochar,0,33.4,1102,331,0,average,32.99401198,,,,,0,1,Manage,1,1,0,0
+Fire management,Forest,Fire,1,1,212,127,0,total,86.7658,,,,,95,,Manage,0,1,0,0
+Improved plantations,Forest,IFM,0,257,443,266,0,average,1.723735409,1.723333333,1.723333333,1.723333333,1.723333333,80,,Manage,1,1,0,0
+Legumes in pastures,Grassland,Legumes,0,72,147,132,88,average,2.041666667,,,,,15,,Manage,1,1,0,0
+Livestock management,Agriculture,Livestock,0,140,880,264,0,average,6.285714286,,,,,0,1,Manage,0,0,1,0
+Mangrove restoration,Blue,Mangrove,0,11,596,179,0,average,54.18181818,,,,,40,,Restore,1,1,0,0
+Natural forest management,Forest,NatFor,0,1914,1470,882,441,average,0.768025078,0.513333333,0.513333333,1.43,1.43,80,,Manage,1,1,0,0
+Nutrient management,Agriculture,CropNut,0,440,706,635,635,average,1.604545455,,,,,10,,Manage,0,0,0,1
+Optimal grazing,Grassland,Grazing,0,712,148,89,45,average,0.207865169,,,,,5,,Manage,1,1,0,0
+Peatland restoration,Wetland,Peatland,0,46,815,394,149,average,17.56333333,5.426666667,13.38333333,29.11333333,29.11333333,0,,Restore,0,1,0,0
+Protect forest,Forest,REDD,1,8.97,3603,2897,1816,total,401.7933333,,,,,90,,Protect,0,1,0,0
+Protect grassland,Grassland,REDDgrass,1,1.7,116,35,0,total,68.38333333,,67.46666667,68.93333333,68.93333333,5,,Protect,0,1,0,0
+Protect mangrove,Blue,REDDmang,1,0.1,130,117,78,total,1290.153333,,,,,40,,Protect,0,1,0,0
+Protect peatland,Wetland,REDDpeat,1,0.78,754,678,452,total,977.8266667,217.0666667,535.6266667,1164.313333,1164.313333,2,,Protect,0,1,0,0
+Protect salt marsh,Blue,REDDsalt,1,0.08,42,38,25,total,523.5266667,,,,,5,,Protect,0,1,0,0
+Protect seagrass,Blue,REDDseag,1,0.45,132,119,79,total,293.15,,,,,5,,Protect,0,1,0,0
+Reforestation,Forest,Refo,0,678,10124,3037,0,average,14.93215339,0,10.34,17.27,17.27,75,,Restore,1,1,0,0
+Rice management,Agriculture,Rice,0,163,265,159,80,average,1.625766871,,,,,0,,Manage,0,0,0.581081081,0.418918919
+Salt marsh restoration,Blue,Salt,0,2,36,22,0,average,18,,,,,5,,Restore,1,1,0,0
+Seagrass restoration,Blue,Seagrass,0,17,209,0,0,average,12.29411765,,,,,5,,Restore,1,1,0,0
