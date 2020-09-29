@@ -7,32 +7,20 @@ library(rgdal)
 library(leaflet)
 library(shiny)
 
-# Initial data import from SharePoint folder "Credited_Projects"
+# Initial data import from SharePoint folder "Scenarios"
 SPDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions"
 TopDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions//Scenarios"
 DataDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions//Scenarios//National%20Potentials%20Tier%202//Standardized%20country%20data//Scripts%20and%20input%20data"
-Local_DataDir = "data"
+Local_DataDir = file.path(getwd(), "data")
 
-# Sometimes RStudio won't connect to SharePoint. In the first instance, try to connecting to VPN (if off-site)
-# Otherwise, we will need to load a local (stored on GitHub) version to work from. NOTE - This may not be up to date!
-# There isn't a simple base R function that does "if(error) else..." so we need to write our own function around "try()"
-SP_readCSV = function (file.name, has_header=T) { # Requires full directory for SharePoint given as 'file.name'. Also assumes we're using read.csv so has a header condition
-  file = try(read.csv(file.name, header = has_header)) # First attempt to load from SharePoint
-  if (class(file) == "try-error") { # If no error then all good
-    cat("Could not read from SharePoint, using local version. NOTE - This may not be the most up-to-date version of", basename(file.name), "\n") # Just a print to the console to show info
-    file = read.csv(file.path(Local_DataDir, basename(file.name)), header = has_header) # Read from local directory location instead - NOTE: Assumes exact same file name and not in sub-folder unless specified at the top
-  } else {
-    cat("Successfully read the file from SharePoint - using most up-to-date version of", basename(file.name), "\n") # Simple print to console to inform us
-  } # End of if statement
-  file # Return the resulting file!
-} # End of function
+source("R_functions.R") # Load core functions used in many scripts - includes SharePoint load function
 
 ### Import and check/analyze the national data
 nat_ters = SP_readCSV(file.path(DataDir, "national_extent_ters.csv"), has_header = T) # Read emissions data
 nat_ters = nat_ters[,colSums(is.na(nat_ters))<nrow(nat_ters)] # Drop the columns where no data is present at all (i.e. all NA)
 nat_other = SP_readCSV(file.path(TopDir, "National Potentials Tier 2", "Standardized country data", "combined_country_data_essential.csv"), has_header = T) # Read other national data
-str(nat_ters) # Check structure
-str(nat_other) # Check structure
+#str(nat_ters) # Check structure
+#str(nat_other) # Check structure
 
 ### Import the spatial data for mapping
 world_spdf=readOGR(dsn=Local_DataDir, layer="TM_WORLD_BORDERS_SIMPL-0.3")
@@ -112,4 +100,8 @@ server <- function(input, output, session) {
   
 }
 
-shinyApp(ui, server)
+# Run app if you want
+#shinyApp(ui, server)
+
+# Clear up environment of any temporary objects created
+CleanEnvir()
