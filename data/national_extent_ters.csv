@@ -159,7 +159,7 @@ Slovenia,SVN,Agroforestry,,,,,GRISCOM,2.01364,NA,,,NA,,,,,,,,,1.356666667,,,,0,N
 Solomon Islands,SLB,Agroforestry,,0,,,GRISCOM,2.799,NA,,,NA,,,,,,,,,1.356666667,,,,0,0
 Somalia,SOM,Agroforestry,,107.32,,,GRISCOM,62.734,NA,,,NA,,,,,,,,,1.356666667,,,,0,107.32
 South Africa,ZAF,Agroforestry,,,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,1.356666667,,,,0,NA
-South Sudan,SSD,Agroforestry,,0,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,1.356666667,,,,0,0
+South Sudan,SSD,Agroforestry,,,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,1.356666667,,,,0,NA
 Spain,ESP,Agroforestry,,,,,GRISCOM,49.9603479,NA,,,NA,,,,,,,,,1.356666667,,,,0,NA
 Sri Lanka,LKA,Agroforestry,,1.82,,,GRISCOM,6.1864,NA,,,NA,,,,,,,,,1.356666667,,,,0,1.82
 Sudan,SDN,Agroforestry,,234.92,,,GRISCOM,184.9233715,NA,,,NA,,,,,,,,,1.356666667,,,,0,234.92
@@ -352,7 +352,7 @@ Slovenia,SVN,Avoided woodfuel,0,,,,GRISCOM,2.01364,NA,,,NA,,,,,,,,,0.146666667,,
 Solomon Islands,SLB,Avoided woodfuel,0.020861204,0.02,-0.000861204,,GRISCOM,2.799,NA,,,NA,,,,,,,,,0.146666667,,,,0,0.02
 Somalia,SOM,Avoided woodfuel,1.881680544,1.88,-0.001680544,,GRISCOM,62.734,NA,,,NA,,,,,,,,,0.146666667,,,,0,1.88
 South Africa,ZAF,Avoided woodfuel,6.460062771,,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,0.146666667,,,,0,6.460062771
-South Sudan,SSD,Avoided woodfuel,0,0,0,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,0.146666667,,,,0,0
+South Sudan,SSD,Avoided woodfuel,0,,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,0.146666667,,,,0,0
 Spain,ESP,Avoided woodfuel,0,,,,GRISCOM,49.9603479,NA,,,NA,,,,,,,,,0.146666667,,,,0,0
 Sri Lanka,LKA,Avoided woodfuel,1.876986773,1.88,0.003013227,,GRISCOM,6.1864,NA,,,NA,,,,,,,,,0.146666667,,,,0,1.88
 Sudan,SDN,Avoided woodfuel,4.740447701,4.74,-0.000447701,,GRISCOM,184.9233715,NA,,,NA,,,,,,,,,0.146666667,,,,0,4.74
@@ -931,7 +931,7 @@ Slovenia,SVN,Fire management,,,,,GRISCOM,2.01364,NA,,,NA,,,,,,,,,40.81,,,,0,NA
 Solomon Islands,SLB,Fire management,,0,,,GRISCOM,2.799,NA,,,NA,,,,,,,,,125.9133333,,,,0,0
 Somalia,SOM,Fire management,,0,,,GRISCOM,62.734,NA,,,NA,,,,,,,,,125.9133333,,,,0,0
 South Africa,ZAF,Fire management,,,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,40.81,,,,0,NA
-South Sudan,SSD,Fire management,,0,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,0,,,,0,0
+South Sudan,SSD,Fire management,,,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,0,,,,0,NA
 Spain,ESP,Fire management,,,,,GRISCOM,49.9603479,NA,,,NA,,,,,,,,,40.81,,,,0,NA
 Sri Lanka,LKA,Fire management,,0,,,GRISCOM,6.1864,NA,,,NA,,,,,,,,,125.9133333,,,,0,0
 Sudan,SDN,Fire management,,0,,,GRISCOM,184.9233715,NA,,,NA,,,,,,,,,125.9133333,,,,0,0
@@ -1548,14 +1548,14 @@ Albania,ALB,Mangrove restoration,,,,,GRISCOM,2.74,NA,,,NA,,,,,,,,,55.73333333,,,
 Algeria,DZA,Mangrove restoration,,,,,GRISCOM,238.1741,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Andorra,AND,Mangrove restoration,,,,,GRISCOM,0.047,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Angola,AGO,Mangrove restoration,,0.01,,,GRISCOM,124.67,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.01
-Antigua and Barbuda,ATG,Mangrove restoration,,,,,GRISCOM,0.044,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Antigua and Barbuda,ATG,Mangrove restoration,,0.000332,,,GRISCOM,0.044,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000332
 Argentina,ARG,Mangrove restoration,,,,,GRISCOM,273.669,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Armenia,ARM,Mangrove restoration,,,,,GRISCOM,2.847,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Australia,AUS,Mangrove restoration,,,,,GRISCOM,769.202,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Australia,AUS,Mangrove restoration,,0.789309,,,GRISCOM,769.202,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.789309
 Austria,AUT,Mangrove restoration,,,,,GRISCOM,8.252,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Azerbaijan,AZE,Mangrove restoration,,,,,GRISCOM,8.2654,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Bahamas,BHS,Mangrove restoration,,,,,GRISCOM,1.001,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Bahrain,BHR,Mangrove restoration,,,,,GRISCOM,0.078,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Bahamas,BHS,Mangrove restoration,,0.166951,,,GRISCOM,1.001,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.166951
+Bahrain,BHR,Mangrove restoration,,0.000003,,,GRISCOM,0.078,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000003
 Bangladesh,BGD,Mangrove restoration,,0.32,,,GRISCOM,13.017,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.32
 Barbados,BRB,Mangrove restoration,,,,,GRISCOM,0.043,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Belarus,BLR,Mangrove restoration,,,,,GRISCOM,20.298,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
@@ -1567,7 +1567,7 @@ Bolivia,BOL,Mangrove restoration,,0,,,GRISCOM,108.33,NA,,,NA,,,,,,,,,55.73333333
 Bosnia and Herzegovina,BIH,Mangrove restoration,,,,,GRISCOM,5.12,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Botswana,BWA,Mangrove restoration,,0,,,GRISCOM,56.673,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Brazil,BRA,Mangrove restoration,,1.15,,,GRISCOM,835.814,NA,,,NA,,,,,,,,,55.73333333,,,,0,1.15
-Brunei Darussalam,BRN,Mangrove restoration,,,,,GRISCOM,0.527,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Brunei Darussalam,BRN,Mangrove restoration,,0.016412,,,GRISCOM,0.527,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.016412
 Bulgaria,BGR,Mangrove restoration,,,,,GRISCOM,10.856,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Burkina Faso,BFA,Mangrove restoration,,0,,,GRISCOM,27.36,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Burma,MMR,Mangrove restoration,,1.02,,,GRISCOM,65.279,NA,,,NA,,,,,,,,,55.73333333,,,,0,1.02
@@ -1579,7 +1579,7 @@ Cape Verde,CPV,Mangrove restoration,,,,,GRISCOM,0.403,NA,,,NA,,,,,,,,,55.7333333
 Central African Republic,CAF,Mangrove restoration,,0,,,GRISCOM,62.298,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Chad,TCD,Mangrove restoration,,0,,,GRISCOM,125.92,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Chile,CHL,Mangrove restoration,,,,,GRISCOM,74.3532,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-China,CHN,Mangrove restoration,,,,,GRISCOM,938.821,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+China,CHN,Mangrove restoration,,0.015978,,,GRISCOM,938.821,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.015978
 Colombia,COL,Mangrove restoration,,0.51,,,GRISCOM,110.95,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.51
 Comoros,COM,Mangrove restoration,,,,,GRISCOM,0.1861,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Congo,COG,Mangrove restoration,,0,,,GRISCOM,34.15,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
@@ -1592,19 +1592,19 @@ Cyprus,CYP,Mangrove restoration,,,,,GRISCOM,0.924,NA,,,NA,,,,,,,,,55.73333333,,,
 Czech Republic,CZE,Mangrove restoration,,,,,GRISCOM,7.72,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Democratic Republic of the Congo,COD,Mangrove restoration,,0.04,,,GRISCOM,226.705,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.04
 Denmark,DNK,Mangrove restoration,,,,,GRISCOM,4,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Djibouti,DJI,Mangrove restoration,,,,,GRISCOM,2.318,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Dominica,DMA,Mangrove restoration,,,,,GRISCOM,0.075,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Djibouti,DJI,Mangrove restoration,,0.000113,,,GRISCOM,2.318,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000113
+Dominica,DMA,Mangrove restoration,,0.000001,,,GRISCOM,0.075,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000001
 Dominican Republic,DOM,Mangrove restoration,,0.02,,,GRISCOM,4.831,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.02
 Ecuador,ECU,Mangrove restoration,,0.25,,,GRISCOM,24.836,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.25
-Egypt,EGY,Mangrove restoration,,,,,GRISCOM,99.545,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Egypt,EGY,Mangrove restoration,,0.000116,,,GRISCOM,99.545,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000116
 El Salvador,SLV,Mangrove restoration,,0.04,,,GRISCOM,2.072,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.04
 Equatorial Guinea,GNQ,Mangrove restoration,,0.02,,,GRISCOM,2.805,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.02
 Eritrea,ERI,Mangrove restoration,,0,,,GRISCOM,10.1,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Estonia,EST,Mangrove restoration,,,,,GRISCOM,4.347,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Ethiopia,ETH,Mangrove restoration,,0,,,GRISCOM,112.930039,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
-Fiji,FJI,Mangrove restoration,,,,,GRISCOM,1.827,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Fiji,FJI,Mangrove restoration,,0.013665,,,GRISCOM,1.827,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.013665
 Finland,FIN,Mangrove restoration,,,,,GRISCOM,30.392,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-France,FRA,Mangrove restoration,,,,,GRISCOM,54.7557,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+France,FRA,Mangrove restoration,,0.016514,,,GRISCOM,54.7557,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.016514
 French Guiana,GUF,Mangrove restoration,,0.1,,,GRISCOM,#N/A,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.1
 Gabon,GAB,Mangrove restoration,,0.09,,,GRISCOM,25.767,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.09
 Gambia,GMB,Mangrove restoration,,0.04,,,GRISCOM,1.012,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.04
@@ -1613,7 +1613,7 @@ Germany,DEU,Mangrove restoration,,,,,GRISCOM,34.938,NA,,,NA,,,,,,,,,55.73333333,
 Ghana,GHA,Mangrove restoration,,0.05,,,GRISCOM,22.754,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.05
 Greece,GRC,Mangrove restoration,,,,,GRISCOM,12.89,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Greenland,GRL,Mangrove restoration,,,,,GRISCOM,41.045,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Grenada,GRD,Mangrove restoration,,,,,GRISCOM,0.034,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Grenada,GRD,Mangrove restoration,,0.000056,,,GRISCOM,0.034,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000056
 Guatemala,GTM,Mangrove restoration,,0.05,,,GRISCOM,10.716,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.05
 Guinea,GIN,Mangrove restoration,,0.1,,,GRISCOM,24.572,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.1
 Guinea-Bissau,GNB,Mangrove restoration,,0.1,,,GRISCOM,2.812,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.1
@@ -1624,13 +1624,13 @@ Hungary,HUN,Mangrove restoration,,,,,GRISCOM,9.126,NA,,,NA,,,,,,,,,55.73333333,,
 Iceland,ISL,Mangrove restoration,,,,,GRISCOM,10.083,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 India,IND,Mangrove restoration,,0.36,,,GRISCOM,297.319,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.36
 Indonesia,IDN,Mangrove restoration,,4.38,,,GRISCOM,187.7519,NA,,,NA,,,,,,,,,55.73333333,,,,0,4.38
-Iran (Islamic Republic of),IRN,Mangrove restoration,,,,,GRISCOM,162.876,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Iran (Islamic Republic of),IRN,Mangrove restoration,,0.003694,,,GRISCOM,162.876,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.003694
 Iraq,IRQ,Mangrove restoration,,,,,GRISCOM,43.4128,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Ireland,IRL,Mangrove restoration,,,,,GRISCOM,6.889,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Israel,ISR,Mangrove restoration,,,,,GRISCOM,2.164,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Italy,ITA,Mangrove restoration,,,,,GRISCOM,29.773,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Jamaica,JAM,Mangrove restoration,,0.01,,,GRISCOM,1.083,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.01
-Japan,JPN,Mangrove restoration,,,,,GRISCOM,36.45,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Japan,JPN,Mangrove restoration,,0.000341,,,GRISCOM,36.45,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000341
 Jordan,JOR,Mangrove restoration,,,,,GRISCOM,8.878,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Kazakhstan,KAZ,Mangrove restoration,,,,,GRISCOM,269.97,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Kenya,KEN,Mangrove restoration,,0.08,,,GRISCOM,56.914,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.08
@@ -1656,9 +1656,9 @@ Mali,MLI,Mangrove restoration,,0,,,GRISCOM,122.019,NA,,,NA,,,,,,,,,55.73333333,,
 Malta,MLT,Mangrove restoration,,,,,GRISCOM,0.032,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Marshall Islands,MHL,Mangrove restoration,,,,,GRISCOM,0.018,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Mauritania,MRT,Mangrove restoration,,0,,,GRISCOM,103.07,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
-Mauritius,MUS,Mangrove restoration,,,,,GRISCOM,0.203,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Mauritius,MUS,Mangrove restoration,,0.000601,,,GRISCOM,0.203,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000601
 Mexico,MEX,Mangrove restoration,,3.41,,,GRISCOM,194.395,NA,,,NA,,,,,,,,,55.73333333,,,,0,3.41
-"Micronesia, Federated States of",FSM,Mangrove restoration,,,,,GRISCOM,0.07,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+"Micronesia, Federated States of",FSM,Mangrove restoration,,0.000301,,,GRISCOM,0.07,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000301
 Monaco,MCO,Mangrove restoration,,,,,GRISCOM,0.0002027,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Mongolia,MNG,Mangrove restoration,,,,,GRISCOM,155.7255,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Montenegro,MNE,Mangrove restoration,,,,,GRISCOM,1.345,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
@@ -1666,15 +1666,15 @@ Morocco,MAR,Mangrove restoration,,,,,GRISCOM,44.63,NA,,,NA,,,,,,,,,55.73333333,,
 Mozambique,MOZ,Mangrove restoration,,0.61,,,GRISCOM,78.638,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.61
 Namibia,NAM,Mangrove restoration,,0,,,GRISCOM,82.329,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Nepal,NPL,Mangrove restoration,,,,,GRISCOM,14.335,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Netherlands,NLD,Mangrove restoration,,,,,GRISCOM,3.367,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-New Zealand,NZL,Mangrove restoration,,,,,GRISCOM,26.331,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Netherlands,NLD,Mangrove restoration,,0.001592,,,GRISCOM,3.367,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.001592
+New Zealand,NZL,Mangrove restoration,,0.034047,,,GRISCOM,26.331,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.034047
 Nicaragua,NIC,Mangrove restoration,,0.24,,,GRISCOM,12.034,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.24
 Niger,NER,Mangrove restoration,,0,,,GRISCOM,126.67,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Nigeria,NGA,Mangrove restoration,,0.26,,,GRISCOM,91.077,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.26
 Norway,NOR,Mangrove restoration,,,,,GRISCOM,36.510785,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Oman,OMN,Mangrove restoration,,,,,GRISCOM,30.95,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Pakistan,PAK,Mangrove restoration,,,,,GRISCOM,77.088,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Palau,PLW,Mangrove restoration,,,,,GRISCOM,0.046,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Oman,OMN,Mangrove restoration,,0.00019,,,GRISCOM,30.95,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.00019
+Pakistan,PAK,Mangrove restoration,,0.078936,,,GRISCOM,77.088,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.078936
+Palau,PLW,Mangrove restoration,,0.000268,,,GRISCOM,0.046,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000268
 Panama,PAN,Mangrove restoration,,0.08,,,GRISCOM,7.4177,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.08
 Papua New Guinea,PNG,Mangrove restoration,,0.32,,,GRISCOM,45.286,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.32
 Paraguay,PRY,Mangrove restoration,,0,,,GRISCOM,39.73,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
@@ -1682,28 +1682,28 @@ Peru,PER,Mangrove restoration,,0,,,GRISCOM,128,NA,,,NA,,,,,,,,,55.73333333,,,,0,
 Philippines,PHL,Mangrove restoration,,0.37,,,GRISCOM,29.817,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.37
 Poland,POL,Mangrove restoration,,,,,GRISCOM,30.617,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Portugal,PRT,Mangrove restoration,,,,,GRISCOM,9.16056,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Qatar,QAT,Mangrove restoration,,,,,GRISCOM,1.149,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Qatar,QAT,Mangrove restoration,,0.000164,,,GRISCOM,1.149,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000164
 Republic of Moldova,MDA,Mangrove restoration,,,,,GRISCOM,3.28853,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Romania,ROU,Mangrove restoration,,,,,GRISCOM,23.008,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Russia,RUS,Mangrove restoration,,,,,GRISCOM,1637.687,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Rwanda,RWA,Mangrove restoration,,0,,,GRISCOM,2.467,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
-Saint Kitts and Nevis,KNA,Mangrove restoration,,,,,GRISCOM,0.026,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Saint Lucia,LCA,Mangrove restoration,,,,,GRISCOM,0.061,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Saint Vincent and the Grenadines,VCT,Mangrove restoration,,,,,GRISCOM,0.039,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Samoa,WSM,Mangrove restoration,,,,,GRISCOM,0.283,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Saint Kitts and Nevis,KNA,Mangrove restoration,,0.000004,,,GRISCOM,0.026,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000004
+Saint Lucia,LCA,Mangrove restoration,,0.000012,,,GRISCOM,0.061,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000012
+Saint Vincent and the Grenadines,VCT,Mangrove restoration,,0.000008,,,GRISCOM,0.039,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000008
+Samoa,WSM,Mangrove restoration,,0.000007,,,GRISCOM,0.283,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000007
 San Marino,SMR,Mangrove restoration,,,,,GRISCOM,0.006,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Saudi Arabia,SAU,Mangrove restoration,,0.01,,,GRISCOM,214.969,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.01
 Senegal,SEN,Mangrove restoration,,0.18,,,GRISCOM,19.253,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.18
 Serbia,SRB,Mangrove restoration,,,,,GRISCOM,8.746,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Seychelles,SYC,Mangrove restoration,,,,,GRISCOM,0.046,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Seychelles,SYC,Mangrove restoration,,0.000067,,,GRISCOM,0.046,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000067
 Sierra Leone,SLE,Mangrove restoration,,0.03,,,GRISCOM,7.218,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.03
-Singapore,SGP,Mangrove restoration,,,,,GRISCOM,0.0709,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Singapore,SGP,Mangrove restoration,,0.000024,,,GRISCOM,0.0709,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000024
 Slovakia,SVK,Mangrove restoration,,,,,GRISCOM,4.808,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Slovenia,SVN,Mangrove restoration,,,,,GRISCOM,2.01364,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Solomon Islands,SLB,Mangrove restoration,,0.04,,,GRISCOM,2.799,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.04
 Somalia,SOM,Mangrove restoration,,0,,,GRISCOM,62.734,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
-South Africa,ZAF,Mangrove restoration,,,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-South Sudan,SSD,Mangrove restoration,,0,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
+South Africa,ZAF,Mangrove restoration,,0.003571,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.003571
+South Sudan,SSD,Mangrove restoration,,,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Spain,ESP,Mangrove restoration,,,,,GRISCOM,49.9603479,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Sri Lanka,LKA,Mangrove restoration,,0.07,,,GRISCOM,6.1864,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.07
 Sudan,SDN,Mangrove restoration,,0,,,GRISCOM,184.9233715,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
@@ -1717,20 +1717,20 @@ Thailand,THA,Mangrove restoration,,0.41,,,GRISCOM,51.089,NA,,,NA,,,,,,,,,55.7333
 The former Yugoslav Republic of Macedonia,MKD,Mangrove restoration,,,,,GRISCOM,2.522,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Timor-Leste,TLS,Mangrove restoration,,0,,,GRISCOM,1.487,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Togo,TGO,Mangrove restoration,,0,,,GRISCOM,5.439,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
-Tonga,TON,Mangrove restoration,,,,,GRISCOM,0.072,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Tonga,TON,Mangrove restoration,,0.00071,,,GRISCOM,0.072,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.00071
 Trinidad and Tobago,TTO,Mangrove restoration,,0.01,,,GRISCOM,0.513,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.01
 Tunisia,TUN,Mangrove restoration,,,,,GRISCOM,15.536,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Turkey,TUR,Mangrove restoration,,,,,GRISCOM,76.963,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Turkmenistan,TKM,Mangrove restoration,,,,,GRISCOM,46.993,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Uganda,UGA,Mangrove restoration,,0,,,GRISCOM,20.052,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
 Ukraine,UKR,Mangrove restoration,,,,,GRISCOM,57.94,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-United Arab Emirates,ARE,Mangrove restoration,,,,,GRISCOM,7.102,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-United Kingdom,GBR,Mangrove restoration,,,,,GRISCOM,24.193,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+United Arab Emirates,ARE,Mangrove restoration,,0.011038,,,GRISCOM,7.102,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.011038
+United Kingdom,GBR,Mangrove restoration,,0.013591,,,GRISCOM,24.193,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.013591
 United Republic of Tanzania,TZA,Mangrove restoration,,0.08,,,GRISCOM,88.58,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.08
-United States,USA,Mangrove restoration,,,,,GRISCOM,914.742,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+United States,USA,Mangrove restoration,,0.541257,,,GRISCOM,914.742,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.541257
 Uruguay,URY,Mangrove restoration,,,,,GRISCOM,17.502,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
 Uzbekistan,UZB,Mangrove restoration,,,,,GRISCOM,44.0555,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
-Vanuatu,VUT,Mangrove restoration,,,,,GRISCOM,1.219,NA,,,NA,,,,,,,,,55.73333333,,,,0,NA
+Vanuatu,VUT,Mangrove restoration,,0.000232,,,GRISCOM,1.219,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.000232
 Venezuela,VEN,Mangrove restoration,,0.28,,,GRISCOM,88.205,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.28
 Viet Nam,VNM,Mangrove restoration,,0.41,,,GRISCOM,31.007,NA,,,NA,,,,,,,,,55.73333333,,,,0,0.41
 Yemen,YEM,Mangrove restoration,,0,,,GRISCOM,52.797,NA,,,NA,,,,,,,,,55.73333333,,,,0,0
@@ -1896,7 +1896,7 @@ Slovenia,SVN,Natural forest management,0,,,,Natural Forest Area,2.01364,1.19214,
 Solomon Islands,SLB,Natural forest management,0.421603908,10.47,10.04839609,,Natural Forest Area,2.799,2.4987,,,1.24935,,,,,,,,,1.43,,,,1.7865705,10.47
 Somalia,SOM,Natural forest management,7.670143417,0.43,-7.240143417,,Natural Forest Area,62.734,5.977,,,2.9885,,,,,,,,,1.43,,,,4.273555,0.43
 South Africa,ZAF,Natural forest management,8.305319313,,,,Natural Forest Area,121.309,13.90647,,,6.953235,,,,,,,,,0.513333333,,,,3.5693273,8.305319313
-South Sudan,SSD,Natural forest management,0,0,0,,Natural Forest Area,63.1928123,6.9691,,,3.48455,,,,,,,,,0.77,,,,2.6831035,0
+South Sudan,SSD,Natural forest management,0,,,,Natural Forest Area,63.1928123,6.9691,,,3.48455,,,,,,,,,0.77,,,,2.6831035,0
 Spain,ESP,Natural forest management,12.13392566,,,,Natural Forest Area,49.9603479,15.98208,,,7.99104,,,,,,,,,0.513333333,,,,4.1020672,12.13392566
 Sri Lanka,LKA,Natural forest management,1.504614049,2.53,1.025385951,,Natural Forest Area,6.1864,1.86321,,,0.931605,,,,,,,,,1.43,,,,1.33219515,2.53
 Sudan,SDN,Natural forest management,5.924766835,4.53,-1.394766835,,Natural Forest Area,184.9233715,18.22955,,,9.114775,,,,,,,,,1.43,,,,13.03412825,4.53
@@ -2089,7 +2089,7 @@ Slovenia,SVN,Nutrient management,,,,,N Reduced,2.01364,0.023575,,,0.005292347,,,
 Solomon Islands,SLB,Nutrient management,,0,,,N Reduced,2.799,0.0109,,,0.002446939,,,,,,,,,15.87666667,,,,0.038849231,0
 Somalia,SOM,Nutrient management,,0,,,N Reduced,62.734,0.1125,,,0.025255102,,,,,,,,,15.87666667,,,,0.400966837,0
 South Africa,ZAF,Nutrient management,,,,,N Reduced,121.309,0.47,,,0.105510204,,,,,,,,,15.87666667,,,,1.67515034,1.67515034
-South Sudan,SSD,Nutrient management,,0,,,N Reduced,63.1928123,0.276,,,0.061959184,,,,,,,,,15.87666667,,,,0.983705306,0
+South Sudan,SSD,Nutrient management,,,,,N Reduced,63.1928123,0.276,,,0.061959184,,,,,,,,,15.87666667,,,,0.983705306,0.983705306
 Spain,ESP,Nutrient management,,,,,N Reduced,49.9603479,1.033494,,,0.232008857,,,,,,,,,15.87666667,,,,3.683527289,3.683527289
 Sri Lanka,LKA,Nutrient management,,1.22,,,N Reduced,6.1864,0.06882965,,,0.015451554,,,,,,,,,15.87666667,,,,0.245319174,1.22
 Sudan,SDN,Nutrient management,,0.48,,,N Reduced,184.9233715,0.16306671,,,0.036606812,,,,,,,,,15.87666667,,,,0.581194159,0.48
@@ -2282,7 +2282,7 @@ Slovenia,SVN,Optimal grazing,0.147731577,,,,Grazing Area,2.01364,0.37626,,,0.092
 Solomon Islands,SLB,Optimal grazing,0,0,0,,Grazing Area,2.799,0.008,,,0.001962784,,,,,,,,,0.22,,,,0.000431813,0
 Somalia,SOM,Optimal grazing,0.237956903,0.24,0.002043097,,Grazing Area,62.734,43,,,10.54996554,,,,,,,,,0.22,,,,2.320992419,0.24
 South Africa,ZAF,Optimal grazing,1.785007268,,,,Grazing Area,121.309,83.928,,,20.59156995,,,,,,,,,0.22,,,,4.530145389,1.785007268
-South Sudan,SSD,Optimal grazing,0,0,0,,Grazing Area,63.1928123,25.7732,,,6.323403997,,,,,,,,,0.22,,,,1.391148879,0
+South Sudan,SSD,Optimal grazing,0,,,,Grazing Area,63.1928123,25.7732,,,6.323403997,,,,,,,,,0.22,,,,1.391148879,0
 Spain,ESP,Optimal grazing,1.051802561,,,,Grazing Area,49.9603479,9.41296,,,2.309451247,,,,,,,,,0.22,,,,0.508079274,1.051802561
 Sri Lanka,LKA,Optimal grazing,0.035693535,0.04,0.004306465,,Grazing Area,6.1864,0.44,,,0.107953136,,,,,,,,,0.22,,,,0.02374969,0.04
 Sudan,SDN,Optimal grazing,1.04106145,1.04,-0.00106145,,Grazing Area,184.9233715,48.195,,,11.82454859,,,,,,,,,0.22,,,,2.601400689,1.04
@@ -2475,7 +2475,7 @@ Slovenia,SVN,Peatland restoration,0.09,,,,GRISCOM,2.01364,NA,,,NA,,,,,,,,,13.383
 Solomon Islands,SLB,Peatland restoration,0.009,0.01,0.001,,GRISCOM,2.799,NA,,,NA,,,,,,,,,29.11333333,,,,0,0.01
 Somalia,SOM,Peatland restoration,0.146,0.15,0.004,,GRISCOM,62.734,NA,,,NA,,,,,,,,,29.11333333,,,,0,0.15
 South Africa,ZAF,Peatland restoration,0.207,,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,13.38333333,,,,0,0.207
-South Sudan,SSD,Peatland restoration,0,0,0,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,17.56333333,,,,0,0
+South Sudan,SSD,Peatland restoration,0,,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,17.56333333,,,,0,0
 Spain,ESP,Peatland restoration,0.108,,,,GRISCOM,49.9603479,NA,,,NA,,,,,,,,,13.38333333,,,,0,0.108
 Sri Lanka,LKA,Peatland restoration,0.061,0.06,-0.001,,GRISCOM,6.1864,NA,,,NA,,,,,,,,,29.11333333,,,,0,0.06
 Sudan,SDN,Peatland restoration,2.911,2.91,-0.001,,GRISCOM,184.9233715,NA,,,NA,,,,,,,,,29.11333333,,,,0,2.91
@@ -2668,7 +2668,7 @@ Slovenia,SVN,Protect forest,0,,,,Natural Forest Area,2.01364,1.19214,,,0.0023842
 Solomon Islands,SLB,Protect forest,0,2.49,2.49,,Natural Forest Area,2.799,2.4987,,,0.0049974,,,,,,,,,401.7933333,,,,2.007922004,2.49
 Somalia,SOM,Protect forest,0.057560066,0.07,0.012439934,,Natural Forest Area,62.734,5.977,,,0.011954,,,,,,,,,401.7933333,,,,4.803037507,0.07
 South Africa,ZAF,Protect forest,51.26257944,,,,Natural Forest Area,121.309,13.90647,,,0.02781294,,,,,,,,,401.7933333,,,,11.17505387,51.26257944
-South Sudan,SSD,Protect forest,0,0,0,,Natural Forest Area,63.1928123,6.9691,,,0.0139382,,,,,,,,,401.7933333,,,,5.600275839,0
+South Sudan,SSD,Protect forest,0,,,,Natural Forest Area,63.1928123,6.9691,,,0.0139382,,,,,,,,,401.7933333,,,,5.600275839,0
 Spain,ESP,Protect forest,0,,,,Natural Forest Area,49.9603479,15.98208,,,0.03196416,,,,,,,,,401.7933333,,,,12.84298639,0
 Sri Lanka,LKA,Protect forest,0,2.64,2.64,,Natural Forest Area,6.1864,1.86321,,,0.00372642,,,,,,,,,401.7933333,,,,1.497250713,2.64
 Sudan,SDN,Protect forest,0.015281805,0.02,0.004718195,,Natural Forest Area,184.9233715,18.22955,,,0.0364591,,,,,,,,,401.7933333,,,,14.64902332,0.02
@@ -2899,14 +2899,14 @@ Albania,ALB,Protect mangrove,0,,,,GRISCOM,2.74,NA,,,NA,,,,,,,,,1290.153333,,,,0,
 Algeria,DZA,Protect mangrove,0,,,,GRISCOM,238.1741,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Andorra,AND,Protect mangrove,0,,,,GRISCOM,0.047,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Angola,AGO,Protect mangrove,0.24440812,0.05,-0.19440812,,GRISCOM,124.67,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.05
-Antigua and Barbuda,ATG,Protect mangrove,0,,,,GRISCOM,0.044,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Antigua and Barbuda,ATG,Protect mangrove,0,0.001356,0.001356,,GRISCOM,0.044,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.001356
 Argentina,ARG,Protect mangrove,0,,,,GRISCOM,273.669,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Armenia,ARM,Protect mangrove,0,,,,GRISCOM,2.847,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Australia,AUS,Protect mangrove,0.76556273,,,,GRISCOM,769.202,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.76556273
+Australia,AUS,Protect mangrove,0.76556273,2.700028,1.93446527,,GRISCOM,769.202,NA,,,NA,,,,,,,,,1290.153333,,,,0,2.700028
 Austria,AUT,Protect mangrove,0,,,,GRISCOM,8.252,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Azerbaijan,AZE,Protect mangrove,0,,,,GRISCOM,8.2654,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Bahamas,BHS,Protect mangrove,0.022934634,,,,GRISCOM,1.001,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.022934634
-Bahrain,BHR,Protect mangrove,0,,,,GRISCOM,0.078,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Bahamas,BHS,Protect mangrove,0.022934634,0.993818,0.970883366,,GRISCOM,1.001,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.993818
+Bahrain,BHR,Protect mangrove,0,0.000016,0.000016,,GRISCOM,0.078,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000016
 Bangladesh,BGD,Protect mangrove,0.079685659,0.66,0.580314341,,GRISCOM,13.017,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.66
 Barbados,BRB,Protect mangrove,0,,,,GRISCOM,0.043,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Belarus,BLR,Protect mangrove,0,,,,GRISCOM,20.298,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
@@ -2918,7 +2918,7 @@ Bolivia,BOL,Protect mangrove,0,0,0,,GRISCOM,108.33,NA,,,NA,,,,,,,,,1290.153333,,
 Bosnia and Herzegovina,BIH,Protect mangrove,0,,,,GRISCOM,5.12,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Botswana,BWA,Protect mangrove,0,0,0,,GRISCOM,56.673,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Brazil,BRA,Protect mangrove,3.789773467,3.89,0.100226533,,GRISCOM,835.814,NA,,,NA,,,,,,,,,1290.153333,,,,0,3.89
-Brunei Darussalam,BRN,Protect mangrove,0.062011612,,,,GRISCOM,0.527,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.062011612
+Brunei Darussalam,BRN,Protect mangrove,0.062011612,0.078262,0.016250388,,GRISCOM,0.527,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.078262
 Bulgaria,BGR,Protect mangrove,0,,,,GRISCOM,10.856,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Burkina Faso,BFA,Protect mangrove,0,0,0,,GRISCOM,27.36,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Burma,MMR,Protect mangrove,18.4003284,3.19,-15.2103284,,GRISCOM,65.279,NA,,,NA,,,,,,,,,1290.153333,,,,0,3.19
@@ -2930,7 +2930,7 @@ Cape Verde,CPV,Protect mangrove,0,,,,GRISCOM,0.403,NA,,,NA,,,,,,,,,1290.153333,,
 Central African Republic,CAF,Protect mangrove,0,0,0,,GRISCOM,62.298,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Chad,TCD,Protect mangrove,0,0,0,,GRISCOM,125.92,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Chile,CHL,Protect mangrove,0,,,,GRISCOM,74.3532,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-China,CHN,Protect mangrove,0.046117486,,,,GRISCOM,938.821,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.046117486
+China,CHN,Protect mangrove,0.046117486,0.065717,0.019599514,,GRISCOM,938.821,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.065717
 Colombia,COL,Protect mangrove,0.159872862,2.5,2.340127138,,GRISCOM,110.95,NA,,,NA,,,,,,,,,1290.153333,,,,0,2.5
 Comoros,COM,Protect mangrove,0,,,,GRISCOM,0.1861,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Congo,COG,Protect mangrove,0,0,0,,GRISCOM,34.15,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
@@ -2943,19 +2943,19 @@ Cyprus,CYP,Protect mangrove,0,,,,GRISCOM,0.924,NA,,,NA,,,,,,,,,1290.153333,,,,0,
 Czech Republic,CZE,Protect mangrove,0,,,,GRISCOM,7.72,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Democratic Republic of the Congo,COD,Protect mangrove,0.068847314,0.2,0.131152686,,GRISCOM,226.705,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.2
 Denmark,DNK,Protect mangrove,0,,,,GRISCOM,4,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Djibouti,DJI,Protect mangrove,0,,,,GRISCOM,2.318,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Dominica,DMA,Protect mangrove,0,,,,GRISCOM,0.075,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Djibouti,DJI,Protect mangrove,0,0.000281,0.000281,,GRISCOM,2.318,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000281
+Dominica,DMA,Protect mangrove,0,0.000004,0.000004,,GRISCOM,0.075,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000004
 Dominican Republic,DOM,Protect mangrove,0.046649163,0.08,0.033350837,,GRISCOM,4.831,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.08
 Ecuador,ECU,Protect mangrove,0.139737576,1.06,0.920262424,,GRISCOM,24.836,NA,,,NA,,,,,,,,,1290.153333,,,,0,1.06
-Egypt,EGY,Protect mangrove,0,,,,GRISCOM,99.545,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Egypt,EGY,Protect mangrove,0,0.000446,0.000446,,GRISCOM,99.545,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000446
 El Salvador,SLV,Protect mangrove,0.060486554,0.11,0.049513446,,GRISCOM,2.072,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.11
 Equatorial Guinea,GNQ,Protect mangrove,0.099225937,0.08,-0.019225937,,GRISCOM,2.805,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.08
 Eritrea,ERI,Protect mangrove,0.000254858,0.01,0.009745142,,GRISCOM,10.1,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.01
 Estonia,EST,Protect mangrove,0,,,,GRISCOM,4.347,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Ethiopia,ETH,Protect mangrove,0,0,0,,GRISCOM,112.930039,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Fiji,FJI,Protect mangrove,0.060123931,,,,GRISCOM,1.827,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.060123931
+Fiji,FJI,Protect mangrove,0.060123931,0.060441,0.000317069,,GRISCOM,1.827,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.060441
 Finland,FIN,Protect mangrove,0,,,,GRISCOM,30.392,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-France,FRA,Protect mangrove,0,,,,GRISCOM,54.7557,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+France,FRA,Protect mangrove,0,0.050562,0.050562,,GRISCOM,54.7557,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.050562
 French Guiana,GUF,Protect mangrove,0.431445385,0.37,-0.061445385,,GRISCOM,#N/A,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.37
 Gabon,GAB,Protect mangrove,0.353251587,0.39,0.036748413,,GRISCOM,25.767,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.39
 Gambia,GMB,Protect mangrove,0,0.11,0.11,,GRISCOM,1.012,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.11
@@ -2964,7 +2964,7 @@ Germany,DEU,Protect mangrove,0,,,,GRISCOM,34.938,NA,,,NA,,,,,,,,,1290.153333,,,,
 Ghana,GHA,Protect mangrove,0.072196726,0.12,0.047803274,,GRISCOM,22.754,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.12
 Greece,GRC,Protect mangrove,0,,,,GRISCOM,12.89,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Greenland,GRL,Protect mangrove,0,,,,GRISCOM,41.045,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Grenada,GRD,Protect mangrove,0.003362691,,,,GRISCOM,0.034,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.003362691
+Grenada,GRD,Protect mangrove,0.003362691,0.000195,-0.003167691,,GRISCOM,0.034,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000195
 Guatemala,GTM,Protect mangrove,1.403106739,0.13,-1.273106739,,GRISCOM,10.716,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.13
 Guinea,GIN,Protect mangrove,0.142685549,0.26,0.117314451,,GRISCOM,24.572,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.26
 Guinea-Bissau,GNB,Protect mangrove,0.030249406,0.29,0.259750594,,GRISCOM,2.812,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.29
@@ -2975,13 +2975,13 @@ Hungary,HUN,Protect mangrove,0,,,,GRISCOM,9.126,NA,,,NA,,,,,,,,,1290.153333,,,,0
 Iceland,ISL,Protect mangrove,0,,,,GRISCOM,10.083,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 India,IND,Protect mangrove,2.178150276,1.2,-0.978150276,,GRISCOM,297.319,NA,,,NA,,,,,,,,,1290.153333,,,,0,1.2
 Indonesia,IDN,Protect mangrove,60.20421914,24.29,-35.91421914,,GRISCOM,187.7519,NA,,,NA,,,,,,,,,1290.153333,,,,0,24.29
-Iran (Islamic Republic of),IRN,Protect mangrove,0,,,,GRISCOM,162.876,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Iran (Islamic Republic of),IRN,Protect mangrove,0,0.012521,0.012521,,GRISCOM,162.876,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.012521
 Iraq,IRQ,Protect mangrove,0,,,,GRISCOM,43.4128,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Ireland,IRL,Protect mangrove,0,,,,GRISCOM,6.889,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Israel,ISR,Protect mangrove,0,,,,GRISCOM,2.164,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Italy,ITA,Protect mangrove,0,,,,GRISCOM,29.773,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Jamaica,JAM,Protect mangrove,0.055026778,0.06,0.004973222,,GRISCOM,1.083,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.06
-Japan,JPN,Protect mangrove,0.004957722,,,,GRISCOM,36.45,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.004957722
+Japan,JPN,Protect mangrove,0.004957722,0.002449,-0.002508722,,GRISCOM,36.45,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.002449
 Jordan,JOR,Protect mangrove,0,,,,GRISCOM,8.878,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Kazakhstan,KAZ,Protect mangrove,0,,,,GRISCOM,269.97,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Kenya,KEN,Protect mangrove,0.029510369,0.29,0.260489631,,GRISCOM,56.914,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.29
@@ -3007,9 +3007,9 @@ Mali,MLI,Protect mangrove,0,0,0,,GRISCOM,122.019,NA,,,NA,,,,,,,,,1290.153333,,,,
 Malta,MLT,Protect mangrove,0,,,,GRISCOM,0.032,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Marshall Islands,MHL,Protect mangrove,0,,,,GRISCOM,0.018,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Mauritania,MRT,Protect mangrove,0,0,0,,GRISCOM,103.07,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Mauritius,MUS,Protect mangrove,0,,,,GRISCOM,0.203,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Mauritius,MUS,Protect mangrove,0,0.001778,0.001778,,GRISCOM,0.203,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.001778
 Mexico,MEX,Protect mangrove,2.330105186,7.76,5.429894814,,GRISCOM,194.395,NA,,,NA,,,,,,,,,1290.153333,,,,0,7.76
-"Micronesia, Federated States of",FSM,Protect mangrove,0.001849378,,,,GRISCOM,0.07,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.001849378
+"Micronesia, Federated States of",FSM,Protect mangrove,0.001849378,0.001641,-0.000208378,,GRISCOM,0.07,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.001641
 Monaco,MCO,Protect mangrove,0,,,,GRISCOM,0.0002027,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Mongolia,MNG,Protect mangrove,0,,,,GRISCOM,155.7255,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Montenegro,MNE,Protect mangrove,0,,,,GRISCOM,1.345,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
@@ -3017,15 +3017,15 @@ Morocco,MAR,Protect mangrove,0,,,,GRISCOM,44.63,NA,,,NA,,,,,,,,,1290.153333,,,,0
 Mozambique,MOZ,Protect mangrove,0.196486559,1.42,1.223513441,,GRISCOM,78.638,NA,,,NA,,,,,,,,,1290.153333,,,,0,1.42
 Namibia,NAM,Protect mangrove,0,0,0,,GRISCOM,82.329,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Nepal,NPL,Protect mangrove,0,,,,GRISCOM,14.335,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Netherlands,NLD,Protect mangrove,0,,,,GRISCOM,3.367,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-New Zealand,NZL,Protect mangrove,0.067948929,,,,GRISCOM,26.331,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.067948929
+Netherlands,NLD,Protect mangrove,0,0.008225,0.008225,,GRISCOM,3.367,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.008225
+New Zealand,NZL,Protect mangrove,0.067948929,0.142912,0.074963071,,GRISCOM,26.331,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.142912
 Nicaragua,NIC,Protect mangrove,0.352120306,0.79,0.437879694,,GRISCOM,12.034,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.79
 Niger,NER,Protect mangrove,0,0,0,,GRISCOM,126.67,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Nigeria,NGA,Protect mangrove,0.24086805,0.97,0.72913195,,GRISCOM,91.077,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.97
 Norway,NOR,Protect mangrove,0,,,,GRISCOM,36.510785,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Oman,OMN,Protect mangrove,0,,,,GRISCOM,30.95,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Pakistan,PAK,Protect mangrove,0.00275185,,,,GRISCOM,77.088,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.00275185
-Palau,PLW,Protect mangrove,0.01205492,,,,GRISCOM,0.046,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.01205492
+Oman,OMN,Protect mangrove,0,0.000452,0.000452,,GRISCOM,30.95,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000452
+Pakistan,PAK,Protect mangrove,0.00275185,0.377207,0.37445515,,GRISCOM,77.088,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.377207
+Palau,PLW,Protect mangrove,0.01205492,0.00237,-0.00968492,,GRISCOM,0.046,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.00237
 Panama,PAN,Protect mangrove,0.310387494,0.4,0.089612506,,GRISCOM,7.4177,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.4
 Papua New Guinea,PNG,Protect mangrove,1.351256233,1.58,0.228743767,,GRISCOM,45.286,NA,,,NA,,,,,,,,,1290.153333,,,,0,1.58
 Paraguay,PRY,Protect mangrove,0,0,0,,GRISCOM,39.73,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
@@ -3033,28 +3033,28 @@ Peru,PER,Protect mangrove,0.003492418,0,-0.003492418,,GRISCOM,128,NA,,,NA,,,,,,,
 Philippines,PHL,Protect mangrove,2.025223945,1.72,-0.305223945,,GRISCOM,29.817,NA,,,NA,,,,,,,,,1290.153333,,,,0,1.72
 Poland,POL,Protect mangrove,0,,,,GRISCOM,30.617,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Portugal,PRT,Protect mangrove,0,,,,GRISCOM,9.16056,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Qatar,QAT,Protect mangrove,0,,,,GRISCOM,1.149,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Qatar,QAT,Protect mangrove,0,0.00117,0.00117,,GRISCOM,1.149,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.00117
 Republic of Moldova,MDA,Protect mangrove,0,,,,GRISCOM,3.28853,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Romania,ROU,Protect mangrove,0,,,,GRISCOM,23.008,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Russia,RUS,Protect mangrove,0,,,,GRISCOM,1637.687,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Rwanda,RWA,Protect mangrove,0,0,0,,GRISCOM,2.467,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Saint Kitts and Nevis,KNA,Protect mangrove,0,,,,GRISCOM,0.026,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Saint Lucia,LCA,Protect mangrove,0.00085957,,,,GRISCOM,0.061,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.00085957
-Saint Vincent and the Grenadines,VCT,Protect mangrove,0,,,,GRISCOM,0.039,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Samoa,WSM,Protect mangrove,0,,,,GRISCOM,0.283,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Saint Kitts and Nevis,KNA,Protect mangrove,0,0.0001,0.0001,,GRISCOM,0.026,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.0001
+Saint Lucia,LCA,Protect mangrove,0.00085957,0.000047,-0.00081257,,GRISCOM,0.061,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000047
+Saint Vincent and the Grenadines,VCT,Protect mangrove,0,0.000045,0.000045,,GRISCOM,0.039,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000045
+Samoa,WSM,Protect mangrove,0,0.000005,0.000005,,GRISCOM,0.283,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000005
 San Marino,SMR,Protect mangrove,0,,,,GRISCOM,0.006,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Saudi Arabia,SAU,Protect mangrove,0,0.03,0.03,,GRISCOM,214.969,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.03
 Senegal,SEN,Protect mangrove,0.005051187,0.55,0.544948813,,GRISCOM,19.253,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.55
 Serbia,SRB,Protect mangrove,0,,,,GRISCOM,8.746,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Seychelles,SYC,Protect mangrove,0,,,,GRISCOM,0.046,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Seychelles,SYC,Protect mangrove,0,0.000361,0.000361,,GRISCOM,0.046,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000361
 Sierra Leone,SLE,Protect mangrove,0.022339115,0.08,0.057660885,,GRISCOM,7.218,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.08
-Singapore,SGP,Protect mangrove,0,,,,GRISCOM,0.0709,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Singapore,SGP,Protect mangrove,0,0.000113,0.000113,,GRISCOM,0.0709,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000113
 Slovakia,SVK,Protect mangrove,0,,,,GRISCOM,4.808,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Slovenia,SVN,Protect mangrove,0,,,,GRISCOM,2.01364,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Solomon Islands,SLB,Protect mangrove,0.150136688,0.18,0.029863312,,GRISCOM,2.799,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.18
 Somalia,SOM,Protect mangrove,0,0.01,0.01,,GRISCOM,62.734,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.01
-South Africa,ZAF,Protect mangrove,0.007239693,,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.007239693
-South Sudan,SSD,Protect mangrove,0,0,0,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+South Africa,ZAF,Protect mangrove,0.007239693,0.009838,0.002598307,,GRISCOM,121.309,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.009838
+South Sudan,SSD,Protect mangrove,0,,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Spain,ESP,Protect mangrove,0,,,,GRISCOM,49.9603479,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Sri Lanka,LKA,Protect mangrove,0.033955311,0.24,0.206044689,,GRISCOM,6.1864,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.24
 Sudan,SDN,Protect mangrove,0,0,0,,GRISCOM,184.9233715,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
@@ -3068,20 +3068,20 @@ Thailand,THA,Protect mangrove,3.74221366,1.37,-2.37221366,,GRISCOM,51.089,NA,,,N
 The former Yugoslav Republic of Macedonia,MKD,Protect mangrove,0,,,,GRISCOM,2.522,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Timor-Leste,TLS,Protect mangrove,0.008412856,0,-0.008412856,,GRISCOM,1.487,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Togo,TGO,Protect mangrove,0,0,0,,GRISCOM,5.439,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Tonga,TON,Protect mangrove,0,,,,GRISCOM,0.072,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Tonga,TON,Protect mangrove,0,0.000225,0.000225,,GRISCOM,0.072,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.000225
 Trinidad and Tobago,TTO,Protect mangrove,0.123105944,0.04,-0.083105944,,GRISCOM,0.513,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.04
 Tunisia,TUN,Protect mangrove,0,,,,GRISCOM,15.536,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Turkey,TUR,Protect mangrove,0,,,,GRISCOM,76.963,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Turkmenistan,TKM,Protect mangrove,0,,,,GRISCOM,46.993,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Uganda,UGA,Protect mangrove,0,0,0,,GRISCOM,20.052,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Ukraine,UKR,Protect mangrove,0,,,,GRISCOM,57.94,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-United Arab Emirates,ARE,Protect mangrove,0,,,,GRISCOM,7.102,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-United Kingdom,GBR,Protect mangrove,0,,,,GRISCOM,24.193,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+United Arab Emirates,ARE,Protect mangrove,0,0.037518,0.037518,,GRISCOM,7.102,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.037518
+United Kingdom,GBR,Protect mangrove,0,0.11862,0.11862,,GRISCOM,24.193,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.11862
 United Republic of Tanzania,TZA,Protect mangrove,0.162944433,0.31,0.147055567,,GRISCOM,88.58,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.31
-United States,USA,Protect mangrove,3.796455672,,,,GRISCOM,914.742,NA,,,NA,,,,,,,,,1290.153333,,,,0,3.796455672
+United States,USA,Protect mangrove,3.796455672,2.06365,-1.732805672,,GRISCOM,914.742,NA,,,NA,,,,,,,,,1290.153333,,,,0,2.06365
 Uruguay,URY,Protect mangrove,0,,,,GRISCOM,17.502,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
 Uzbekistan,UZB,Protect mangrove,0,,,,GRISCOM,44.0555,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
-Vanuatu,VUT,Protect mangrove,0,,,,GRISCOM,1.219,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
+Vanuatu,VUT,Protect mangrove,0,0.001185,0.001185,,GRISCOM,1.219,NA,,,NA,,,,,,,,,1290.153333,,,,0,0.001185
 Venezuela,VEN,Protect mangrove,0.96935691,1.09,0.12064309,,GRISCOM,88.205,NA,,,NA,,,,,,,,,1290.153333,,,,0,1.09
 Viet Nam,VNM,Protect mangrove,0.64624492,1.13,0.48375508,,GRISCOM,31.007,NA,,,NA,,,,,,,,,1290.153333,,,,0,1.13
 Yemen,YEM,Protect mangrove,0,0,0,,GRISCOM,52.797,NA,,,NA,,,,,,,,,1290.153333,,,,0,0
@@ -3247,7 +3247,7 @@ Slovenia,SVN,Protect peatland,0.009,,,,GRISCOM,2.01364,NA,,,NA,,,,,,,,,535.62666
 Solomon Islands,SLB,Protect peatland,0,0,0,,GRISCOM,2.799,NA,,,NA,,,,,,,,,1164.313333,,,,0,0
 Somalia,SOM,Protect peatland,0.026,0.03,0.004,,GRISCOM,62.734,NA,,,NA,,,,,,,,,1164.313333,,,,0,0.03
 South Africa,ZAF,Protect peatland,0.162,,,,GRISCOM,121.309,NA,,,NA,,,,,,,,,535.6266667,,,,0,0.162
-South Sudan,SSD,Protect peatland,0,0,0,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,977.8266667,,,,0,0
+South Sudan,SSD,Protect peatland,0,,,,GRISCOM,63.1928123,NA,,,NA,,,,,,,,,977.8266667,,,,0,0
 Spain,ESP,Protect peatland,0.026,,,,GRISCOM,49.9603479,NA,,,NA,,,,,,,,,535.6266667,,,,0,0.026
 Sri Lanka,LKA,Protect peatland,0.001,0,-0.001,,GRISCOM,6.1864,NA,,,NA,,,,,,,,,1164.313333,,,,0,0
 Sudan,SDN,Protect peatland,0.582,0.58,-0.002,,GRISCOM,184.9233715,NA,,,NA,,,,,,,,,1164.313333,,,,0,0.58
