@@ -165,12 +165,14 @@ graz = graz[complete.cases(graz$Value),]
 graz_loss = data.frame()
 for(i in levels(droplevels(as.factor(graz$Area)))) {
   tmp = graz[graz$Area == i,]
-  tmp = tmp[tmp$Year>1979,]
-  regres = lm(Value~Year, data=tmp)
-  slope = summary(regres)[]$coefficients[[2,1]]
-  tmp2 = data.frame(ISO3 = head(tmp$ISO3,1), Country = head(tmp$Country,1), base_year = min(tmp$Year), recent_year = max(tmp$Year), regression = slope, grass_loss = ifelse(slope>0,0,slope*-1))
-  tmp2$grass_loss_time = tmp2$recent_year - tmp2$base_year
-  graz_loss = rbind(graz_loss, tmp2)
+  if(max(tmp$Year)>1985) {
+    tmp = tmp[tmp$Year>1979,]
+    regres = lm(Value~Year, data=tmp)
+    slope = summary(regres)[]$coefficients[[2,1]]
+    tmp2 = data.frame(ISO3 = head(tmp$ISO3,1), Country = head(tmp$Country,1), base_year = min(tmp$Year), recent_year = max(tmp$Year), regression = slope, grass_loss = ifelse(slope>0,0,slope*-1))
+    tmp2$grass_loss_time = tmp2$recent_year - tmp2$base_year
+    graz_loss = rbind(graz_loss, tmp2)
+  }
 }
 
 graz_loss = graz_loss[complete.cases(graz_loss$Country),] # Remove old (non-existent countries)

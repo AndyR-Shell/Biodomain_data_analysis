@@ -10,7 +10,7 @@ library(shiny)
 # Initial data import from SharePoint folder "Scenarios"
 SPDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions"
 TopDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions//Scenarios"
-DataDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions//Scenarios//National%20Potentials%20Tier%202//Standardized%20country%20data//Scripts%20and%20input%20data"
+DataDir = "https://eu001-sp.shell.com//sites//AAAAB3387//Nature%20Based%20Solutions//Scenarios//National%20Potentials//Standardized%20country%20data//Scripts%20and%20input%20data"
 Local_DataDir = file.path(getwd(), "data")
 
 source("R_functions.R") # Load core functions used in many scripts - includes SharePoint CSV read function
