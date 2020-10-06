@@ -29,9 +29,9 @@ DataDir = file.path(TopDir, "data") # Essentially the input folder (where input 
 # Load functions
 source(file.path(TopDir, "Sky1-5_functions.R")) # Load functions used to calculate proportional adoption over time and derive ERs over time
 
-# Load necessary datafiles
-adopt_in = read.csv(file.path(DataDir, "adoption.csv"), header=T) # Read in the inputs required to calculate annual adoption rates of each NBS type
-extent_in = read.csv(file.path(DataDir, "extent.csv"), header=T) # Read in the inputs required to convert adoption rates to absolute values of hectares and emissions reductions
+# Load necessary datafiles - Note: newer files have uncertainty columns as well
+adopt_in = read.csv(file.path(DataDir, "adoption_uncert.csv"), header=T) # Read in the inputs required to calculate annual adoption rates of each NBS type
+extent_in = read.csv(file.path(DataDir, "extent_uncert.csv"), header=T) # Read in the inputs required to convert adoption rates to absolute values of hectares and emissions reductions
 
 ###############
 ### === GLOBAL NBS ADOPTION OVER TIME === ###
@@ -167,6 +167,18 @@ ggplot(TERs_Max_alldata, aes(x=year, y=TERs_MtCO2, colour=NBS_short_name)) +
 #####
 ### CLEAN UP AND SAVE AS NECESSARY
 #####
+
+detach(package:plyr) # Otherwise the summarise doesn't work well  
+
+# Simple metric to track change in parameters - Remove-to-Avoid ratio of total emissions
+tmp = merge(TERs_Max_alldata, extent_in[c("NBS_short_name", "NBS_desc", "active_remove")], by=c("NBS_short_name")) %>% 
+  group_by(year, active_remove) %>%
+  summarise(totals = sum(TERs_MtCO2, na.rm=T)) %>%
+  spread(key = active_remove, value = totals) %>%
+  rename("Avoid" = "0", "Remove" = "1")
+
+ggplot(tmp[tmp$year>2019,], aes(x=year, y=Remove/Avoid)) +
+  geom_line()
 
 # Remove all unnecessary objects
 rm(list=ls(pattern = "^tmp"))
