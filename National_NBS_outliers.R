@@ -77,7 +77,7 @@ ggplot(NAdataset, aes(x=ISO3, y=NBS_desc)) +
 ### === CHECK NAs
 ########
 
-# Create dataframe of values < 1 ktCO2/yr
+# Create dataframe of values < 1 tCO2/yr
 nat_zeros = nat_ters[!is.na(nat_ters$potential) & nat_ters$potential < 0.000001,]
 nat_zeros = merge(nat_zeros, GrisGlobal[c("NBS_desc", "NBS_group")]) # Add the NBS_group - easy plotting
 
