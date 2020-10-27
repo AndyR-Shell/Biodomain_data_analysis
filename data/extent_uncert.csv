@@ -1,0 +1,24 @@
+NBS_desc,NBS_short_name,extent_rate,extent_mn,extent,extent_mx,global_extent_mn,global_extent,global_extent_mx,global_ter,ter_intensity_mn,ter_intensity,ter_intensity_mx,restore_type,active_remove,prop_co2,prop_ch4,prop_n2o
+Agroforestry,Agro,0,154.2,608,997,154.2,608,997,1040,0.469408225,1.710526316,12.01037613,Manage,1,1,0,0
+Avoided woodfuel,Woodfuel,0,224,280,336,224,280,336,367,0.116428571,0.262142857,0.726785714,Manage,0,1,0,0
+Better cropping,Crops,0,281.6,352,422.4,281.6,352,422.4,413,0.880681818,1.173295455,1.465909091,Manage,1,1,0,0
+Biochar,Biochar,0,319.5,835,1035.5,319.5,835,1035.5,1102,1.055808383,1.319760479,1.583712575,Manage,1,1,0,0
+Fire management,Fire,1,0.8,1,1.2,0.8,1,1.2,212,24,86.7658,299,Manage,0,1,0,0
+Improved plantations,IFM,0,199,257,335,199,257,335,443,0.733333333,1.723735409,3.666666667,Manage,1,1,0,0
+Legumes in pastures,Legumes,0,61,72,680,61,72,680,147,0.953333333,2.041666667,3.08,Manage,1,1,0,0
+Livestock management,Livestock,0,112,140,168,112,140,168,880,0.392857143,6.285714286,13.15714286,Manage,0,0,1,0
+Mangrove restoration,Mangrove,0,9,11,13,9,11,13,596,44,54.18181818,67.46666667,Restore,1,1,0,0
+Natural forest management,NatFor,0,1247,1914,2350,1247,1914,2350,1470,0.66,0.768025078,4.4,Manage,1,1,0,0
+Nutrient management,CropNut,0,652,880,1160,652,880,1160,706,0.531666667,1.604545455,0.971666667,Manage,0,0,0,1
+Optimal grazing,Grazing,0,569.6,712,854.4,569.6,712,854.4,148,0.207865169,0.207865169,0.981741573,Manage,1,1,0,0
+Peatland restoration,Peatland,0,46.4,46.4,83,46.4,46.4,83,815,12.83333333,17.56333333,36.3,Restore,0,1,0,0
+Protect forest,REDD,1,7.95,8.97,9.98,7.95,8.97,9.98,3603,352,401.7933333,451,Protect,0,1,0,0
+Protect grassland,REDDgrass,1,1.13,1.7,5.4,1.13,1.7,5.4,116,58.33666667,68.38333333,78.43,Protect,0,1,0,0
+Protect mangrove,REDDmang,1,0.04,0.1,0.16,0.04,0.1,0.16,130,982.6666667,1290.153333,1598.666667,Protect,0,1,0,0
+Protect peatland,REDDpeat,1,0.29,0.78,0.78,0.29,0.78,0.78,754,722.3333333,977.8266667,2016.666667,Protect,0,1,0,0
+Protect salt marsh,REDDsalt,1,0.04,0.08,0.12,0.04,0.08,0.12,42,190.6666667,523.5266667,858,Protect,0,1,0,0
+Protect seagrass,REDDseag,1,0.12,0.45,0.78,0.12,0.45,0.78,132,99,293.15,487.6666667,Protect,0,1,0,0
+Reforestation,Refo,0,230,678,1125,230,678,1125,10124,10.30333333,14.93215339,20.02,Restore,1,1,0,0
+Rice management,Rice,0,130.4,163,195.6,130.4,163,195.6,265,1.527607362,1.625766871,1.828220859,Manage,0,0,0.581081081,0.418918919
+Salt marsh restoration,Salt,0,0.2,2,3.2,0.2,2,3.2,36,12.57666667,18,29.59,Restore,1,1,0,0
+Seagrass restoration,Seagrass,0,8.3,17,25.4,8.3,17,25.4,209,6.856666667,12.29411765,17.93,Restore,1,1,0,0

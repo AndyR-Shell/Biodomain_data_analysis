@@ -29,7 +29,9 @@ NBS_in = merge(adopt_in, extent_in) # Create one dataframe that can be used as i
 #####
 
 # Run the model and output
-Global_AllNBS_Base = Annual_NBS_potentials(run_name = "1", inputs = NBS_in, output_area_data = T)
+Global_AllNBS_Base = Annual_NBS_potentials(run_name = "Global - All Pathways - Base Adopt - Max extent",
+                                           inputs = NBS_in,
+                                           output_area_data = F)
 
 # Quick plotcheck
 ggplot(Global_AllNBS_Base, aes(x=year, y=TERs_MtCO2, colour=NBS_short_name)) +

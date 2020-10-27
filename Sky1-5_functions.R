@@ -89,7 +89,7 @@ annual_TER_calculator = function(area_timeframe_data,
       if(function_type == "pulse") { # Avoid refers to those pathways where emission reductions are generated in the year they are avoided but not again afterwards
         tmp$prop_annERs = c(1, rep(0, length(tmp$time)-1)) # Proportion starts at 1 but is set to 0 for every year after that. Assumption is that area needs to remain protected.
       } else {
-        cat("The 'function_type' that was input is not recognized. Current support for 'linear, constant or avoid only.") # In case there is an error thrown, print a message to console
+        cat("The 'function_type' that was input is not recognized. Current support for 'linear, constant or pulse only.") # In case there is an error thrown, print a message to console
       } # End of error statement
     } # End of avoid calculation 
   } # End of all if statements
@@ -117,7 +117,7 @@ annual_TER_calculator = function(area_timeframe_data,
 
 # === # run_name: Character vector used to give this run a unique identifier for further analysis
 # Recommended naming convention: "Geographic scale - NBS pathways included - Adoption parameter scenario - Maximal extent scenario - DD/MM/YYYY of run"
-# === # inputs: Dataframe format - requires the columns 'NBS_short_name', 'year_start', 'year_50', 'saturation', 'function_type', 'years_to_max''NBS_short_name', 'extent_rate', 'global_extent' and 'ter_intensity'
+# === # inputs: Dataframe format - requires the columns 'NBS_short_name', 'year_start', 'year_50', 'saturation', 'function_type', 'years_to_max''NBS_short_name', 'extent_rate', 'extent' and 'ter_intensity'
 # - Most of the columns are used by the two embedded functions (proportional_adoption and annual_TER_calculator) but in summary:
 ## 'NBS_short_name' - A character vector with no spaces that gives short names of all the NBS pathways in this simulation
 ## year_start - Integer stating in which year the NBS pathway reaches 0.1% gross enrollment of maximal extent (i.e. if the maximum extent is 1,000,000 ha, then the year in which 1,000 ha has been enrolled) (e.g. 2025)
@@ -128,9 +128,9 @@ annual_TER_calculator = function(area_timeframe_data,
 # constant = given annual ER intensity (tCO2/ha/yr; ter_intensity parameter below) is generated every year during entire 'saturation timeline'
 # pulse = all emission reductions are generated immediately in year 1 but land must be protected for saturation timeline with 0 emissions generated each year after year 1 (note - should align with a complimentary ter_intensity designation)
 ## years_to_max - Integer vector that states the number of years before the maximum emission reduction intensity is reached (used when function_type is linear, as described above)
-## extent_rate - Binary integer vector (0 or 1) to indicate whether extent data (i.e. the global_extent column values) for that NBS pathway are provided in Mha or Mha/yr
-## global_extent - Numeric vector reporting the maximal extent for that pathway reported in total Millions of hectares (Mha) or Mha per year (i.e. 678 Mha maximum available for reforestation but 8.97 Mha/yr maximum for avoiding deforestation)
-## ter_intensity - Numeric vector of annual emission reduction intensity (i.e. tCO2/ha/yr) of an NBS type that is used to convert the area (Ha) into total emission reductions (TERs)
+## extent_rate - Binary integer vector (0 or 1) to indicate whether extent data (i.e. the extent column values) for that NBS pathway are provided in Mha or Mha/yr
+## extent - Numeric vector reporting the maximal extent for that pathway reported in total Millions of hectares (Mha) or Mha per year (i.e. 678 Mha maximum available for reforestation but 8.97 Mha/yr maximum for avoiding deforestation)
+## ter_intensity - Numeric vector of average annual emission reduction intensity (i.e. tCO2/ha/yr) of an NBS type that is used to convert the area (Ha) into total emission reductions (TERs)
 # === # timeframe_start: Integer value to represent the first year that you want to run the simulation over (defaults to year 2000)
 # === # timeframe_end: Integer value to represent the last year that you want to run the simulation over (defaults to year 2200)
 # === # force_average_ERprofile: Boolean vector to determine whether the total proportion should average to 1 or not (i.e. if proportional ER intensity is ramped up over 10 years then the final average will be < 1, which translates to fewer emission reductions over time.
@@ -150,6 +150,7 @@ annual_TER_calculator = function(area_timeframe_data,
 ## 'area_Mha' - A numeric vector that converts the 'area_proportion' to an absolute ADDITIONAL area (in Mha) that is enrolled to generate emission reductions that year  
 ## 'TERs_MtCO2' - A numeric vector that states the amount of emission reductions generated in that each year in million tonnes CO2e per year
 ## 'area_Mha_todate' - A numeric vector that cumulates the area_Mha column to show the total area of each NBS pathway that has been enrolled to date (doesn't account for any unenrolment -- tied to maximal extent, not emissions being generated)
+## 'TERs_MtCO2_todate' - A numeric vector that cumulates the TERs_MtCO2 column to show the total emission reductions of each NBS pathway that has been generated to date
 ## 'run_ID' - Simple character vector with the provided "run_name" used by the function
 # === # (OPTIONAL) Dataframe format that shows the full annual and cumulative enrolment and unenrolment (and net change) areas for each NBS pathway for every year over the simulated timeframe. Includes teh columns:
 # Same columns as above dataframe output, see descriptions. Only difference is the 'adoption_datatype' factor levels. These are:
@@ -227,13 +228,12 @@ Annual_NBS_potentials = function(run_name = NULL,
   adoption_alldata = data.frame() # Create empty dataframe to put data into
   for(i in TNCfull_NBSlist) { # Loop over each NBS and allocate based on maximum hectare extent
     tmp = adoption_perc_alldata[adoption_perc_alldata$NBS_short_name == i,] # Area proportion timeline - Subset based on pathway
-    tmp$area_Mha = tmp$area_proportion * inputs$global_extent[inputs$NBS_short_name == i] # Simply multiply proportions by maximum extent
+    tmp$area_Mha = tmp$area_proportion * inputs$extent[inputs$NBS_short_name == i] # Simply multiply proportions by maximum extent
     adoption_alldata = rbind(adoption_alldata, tmp) # Combine new dataframes
   }
   
   #####
   ### CONVERT HECTARES TO EMISSIONS REDUCTIONS
-  # MAXIMUMS
   #####
   
   ### As above, but convert the hectares into maximal TERs
@@ -255,6 +255,7 @@ Annual_NBS_potentials = function(run_name = NULL,
       
       # Because the TER calculations are based off the number of new hectares that year, pathways are expressed as a rate. As a result it's also useful to have a cumulative column showing total number of hectares enrolled to date (i.e. have Mha as well as Mha/yr)
       tmp_annual_ERs$area_Mha_todate = cumsum(tmp_annual_ERs$area_Mha) # Cumulate the areas to that date - note that when area is unenrolled the actually means less and less is protected (assumes after 'saturation' - i.e. 100 years then that area is no longer at threat)
+      tmp_annual_ERs$TERs_MtCO2_todate = cumsum(tmp_annual_ERs$TERs_MtCO2) # Cumulate the emission reductions generated to that date
     } else { # The pathway expresses extent as a global absolute value (i.e. Mha) then use 'annual' area data
       tmp = tmp[tmp$adoption_datatype=="Annual gross enrollment",] # Subset to only include datatype that is relevant - NOTE: For these we use 'gross' enrollment instead of 'net' because the calculator uses the same 'saturation' value to limit the years which generate ERs (and therefore we don't need to account for unenrollment as well)
       
@@ -267,6 +268,7 @@ Annual_NBS_potentials = function(run_name = NULL,
                                              force_average = force_average_ERprofile) # Use previously set input as to whether you want to force the calculated overall average ER intensity to equal the value in inputs (default to TRUE)
       
       tmp_annual_ERs$area_Mha_todate = cumsum(tmp_annual_ERs$area_Mha) # Cumulate the areas to that date so this 'area' column is consistent with 'avoidance' pathways. Assumption is that once a hectare is enrolled it must be protected indefinitely
+      tmp_annual_ERs$TERs_MtCO2_todate = cumsum(tmp_annual_ERs$TERs_MtCO2) # Cumulate the emission reductions generated to that date
     } # End of if statement
     TERs_alldata = rbind(TERs_alldata, tmp_annual_ERs) # Combine all pathways
   } # End of loop

@@ -1,0 +1,24 @@
+NBS_desc,NBS_short_name,time_at_threat,function_type,years_to_max,year_start_mn,year_start,year_start_mx,year_50_mn,year_50,year_50_mx,saturation_mn,saturation,saturation_mx
+Agroforestry,Agro,0,linear,8,2019,2019,2019,2050,2060,2070,30,50,60
+Avoided woodfuel,Woodfuel,0,constant,0,2023,2025,2033,2070,2080,2090,50,100,200
+Better cropping,Crops,0,constant,5,2020,2020,2028,2030,2040,2050,30,50,150
+Biochar,Biochar,0,constant,0,2023,2025,2033,2040,2050,2060,100,100,200
+Fire management,Fire,100,pulse,0,2010,2010,2010,2045,2055,2065,100,100,200
+Improved plantations,IFM,0,linear,5,2010,2010,2010,2030,2040,2050,40,65,70
+Legumes in pastures,Legumes,0,constant,3,2020,2020,2028,2045,2055,2065,60,100,200
+Livestock management,Livestock,0,constant,0,2023,2025,2033,2050,2060,2070,80,100,200
+Mangrove restoration,Mangrove,0,linear,10,2020,2020,2028,2050,2060,2070,60,100,200
+Natural forest management,NatFor,0,linear,10,2010,2010,2010,2070,2080,2090,30,50,80
+Nutrient management,CropNut,0,constant,0,2020,2020,2028,2030,2040,2050,100,100,200
+Optimal grazing,Grazing,0,constant,3,2020,2020,2028,2075,2085,2095,60,100,150
+Peatland restoration,Peatland,0,constant,2,2021,2022,2030,2060,2070,2080,15,20,30
+Protect forest,REDD,20,pulse,0,2001,2001,2001,2030,2040,2050,20,100,200
+Protect grassland,REDDgrass,30,pulse,0,2015,2015,2015,2035,2045,2055,30,100,200
+Protect mangrove,REDDmang,20,pulse,0,2020,2020,2028,2030,2040,2050,20,68,200
+Protect peatland,REDDpeat,30,pulse,0,2015,2015,2015,2040,2050,2060,30,89,200
+Protect salt marsh,REDDsalt,50,pulse,0,2025,2030,2038,2060,2070,2080,50,64,200
+Protect seagrass,REDDseag,30,pulse,0,2023,2026,2034,2045,2055,2065,30,67,200
+Reforestation,Refo,0,linear,8,2015,2015,2015,2045,2055,2065,20,25,50
+Rice management,Rice,0,constant,0,2023,2025,2033,2040,2050,2060,100,100,200
+Salt marsh restoration,Salt,0,linear,10,2031,2042,2050,2085,2095,2105,40,57,100
+Seagrass restoration,Seagrass,0,linear,5,2026,2031,2039,2065,2075,2085,35,51,80
