@@ -40,13 +40,13 @@ set.seed(500)
 # Sensitivity analysis settings
 runs = 1000                # How many Monte Carlo iterations you'll run the sensitivity over (to create the standard deviation)
 parallelled = T            # Should you run the sensitivity analysis in parallel mode to use all cores of the machine?
-manual_sens = T            # Manually specify the starting value ranges (i.e. uncertainty analysis) or use a set change %? (sensitivity analysis) - SPECIFY SVAR BELOW
+manual_sens = F            # Manually specify the starting value ranges (i.e. uncertainty analysis) or use a set change %? (sensitivity analysis) - SPECIFY SVAR BELOW
 svar = 0.2                 # Variability induced to calculate sensitivity (e.g. 0.2 is 20%) - NOT USED IF MANUALLY DEFINED
-year_checks = c(2020:2100)#seq(2020, 2100, 10)      # Which years do you want to calculate sensitivities for? (Just choose 2100 if that's all you're interested in, or even 2020:2200 if you want all years)
-#2035,
-#2050,
-#2100,
-#2150)
+year_checks = c(2020,      # Which years do you want to calculate sensitivities for? (Just choose 2100 if that's all you're interested in, or even 2020:2200 if you want all years)
+                2035,
+                2050,
+                2100)
+#seq(2020, 2100, 10)
 
 # NBS potentials model settings
 starting_year = 2000       # What year do you want to start the simulation on? For example, start at year 2000? Not recommended to start after current year
@@ -286,7 +286,8 @@ if(parallelled) { # If using parallelization, needs additional setup...
                                          print_messages = print_to_console)
           
           # Using the output, subset to be just those years of interest - otherwise final output can be unreasonably large!
-          summary_out = output[output$year %in% year_checks,] # Subset 
+          #summary_out = output[output$year %in% year_checks,] # Subset 
+          summary_out = output
           
           # Can be useful to combine the results with the sensitivity parameter values used to generate these results
           for(par in uniquepars) {
@@ -397,7 +398,8 @@ if(parallelled) { # If using parallelization, needs additional setup...
                                        print_messages = print_to_console)
         
         # Using the output, subset to be just those years of interest - otherwise final output can be unreasonably large!
-        summary_out = output[output$year %in% year_checks,] # Subset 
+        #summary_out = output[output$year %in% year_checks,] # Subset 
+        summary_out = output
         
         # Can be useful to combine the results with the sensitivity parameter values used to generate these results
         for(par in uniquepars) {
@@ -530,21 +532,30 @@ save(outputs, file = file.path(SaveDir, paste0("outputs_", runs, "_runs_", Sys.D
 
 test = results[["global"]]
 
-ggplot(test, aes(x=year, y=TERs_MtCO2/1000)) +
-  geom_area(aes(fill=NBS_short_name)) +
-  facet_wrap(~run_ID) +
-  ylab(expression(paste("Total annual emission reductions (Gt ", CO[2], yr^-1, ")")))
+#ggplot(test, aes(x=year, y=TERs_MtCO2/1000)) +
+#  geom_area(aes(fill=NBS_short_name)) +
+#  facet_wrap(~run_ID) +
+#  ylab(expression(paste("Total annual emission reductions (Gt ", CO[2], yr^-1, ")")))
 
 test2 = test %>%
   group_by(year, run_ID) %>%
   summarise(TERs = sum(TERs_MtCO2))
 
-ggplot(test2, aes(x=year, y=TERs/1000)) +
+p.montecarlo = ggplot(test2, aes(x=year, y=TERs/1000)) +
   geom_line(aes(colour=run_ID), alpha=0.5) +
-  geom_smooth(se=F) +
+  geom_smooth(se=T) +
   scale_color_manual(values=c(rep("grey50", nlevels(as.factor(test2$run_ID))))) +
-  ylab(expression(paste("Total annual emission reductions (Gt ", CO[2], yr^-1, ")"))) +
-  theme(legend.position = 'none')
+  ylab(expression(paste("Total annual emission reductions (Gt ", CO[2], " ", yr^-1, ")"))) +
+  scale_x_continuous(expand=c(0,0)) +
+  scale_y_continuous(expand=c(0,0)) +
+  theme_bw() +
+  theme(legend.position = 'none',
+        axis.title.x = element_blank())
+
+# And save the resulting plot
+ggsave(p.montecarlo, file=file.path(SaveDir,
+                          paste("MonteCarlo_",runs,"runs_",Sys.Date(),".pdf",sep="")),
+       width=300, height=200, units="mm")
 
 # Remove all unnecessary objects
 rm(list=ls(pattern = "^tmp"))
