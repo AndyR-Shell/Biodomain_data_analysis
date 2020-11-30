@@ -1,24 +1,24 @@
 NBS_desc,NBS_short_name,time_at_threat,function_type,years_to_max,year_start,year_50,saturation
-Agroforestry,Agro,0,linear,8,2019,2060,50
-Avoided woodfuel,Woodfuel,0,constant,0,2025,2080,100
-Better cropping,Crops,0,constant,5,2020,2040,50
-Biochar,Biochar,0,constant,0,2025,2050,100
-Fire management,Fire,100,pulse,0,2010,2055,100
-Improved plantations,IFM,0,linear,5,2010,2040,65
-Legumes in pastures,Legumes,0,constant,3,2020,2055,100
-Livestock management,Livestock,0,constant,0,2025,2060,100
-Mangrove restoration,Mangrove,0,linear,10,2020,2060,100
-Natural forest management,NatFor,0,linear,10,2010,2080,50
-Nutrient management,CropNut,0,constant,0,2020,2040,100
-Optimal grazing,Grazing,0,constant,3,2020,2085,100
-Peatland restoration,Peatland,0,constant,2,2022,2070,20
-Protect forest,REDD,20,pulse,0,2001,2040,100
-Protect grassland,REDDgrass,30,pulse,0,2015,2045,100
-Protect mangrove,REDDmang,20,pulse,0,2020,2040,68
-Protect peatland,REDDpeat,30,pulse,0,2015,2050,89
-Protect salt marsh,REDDsalt,50,pulse,0,2030,2070,64
-Protect seagrass,REDDseag,30,pulse,0,2026,2055,67
-Reforestation,Refo,0,linear,8,2015,2055,25
-Rice management,Rice,0,constant,0,2025,2050,100
-Salt marsh restoration,Salt,0,linear,10,2042,2095,57
-Seagrass restoration,Seagrass,0,linear,5,2031,2075,51
+Agroforestry,Agro,0,linear,8,2023,2038,50
+Avoided woodfuel,Woodfuel,0,constant,0,2022,2038,100
+Better cropping,Crops,0,constant,5,2026,2044,50
+Biochar,Biochar,0,constant,0,2025,2046,100
+Fire management,Fire,100,pulse,0,2024,2039,100
+Improved plantations,IFM,0,linear,5,2022,2033,65
+Legumes in pastures,Legumes,0,constant,3,2024,2039,100
+Livestock management,Livestock,0,constant,0,2024,2041,100
+Mangrove restoration,Mangrove,0,linear,10,2024,2052,100
+Natural forest management,NatFor,0,linear,10,2027,2047,50
+Nutrient management,CropNut,0,constant,0,2028,2051,100
+Optimal grazing,Grazing,0,constant,3,2026,2044,100
+Peatland restoration,Peatland,0,constant,2,2022,2048,20
+Protect forest,REDD,20,pulse,0,2021,2028,100
+Protect grassland,REDDgrass,30,pulse,0,2022,2028,100
+Protect mangrove,REDDmang,20,pulse,0,2021,2026.5,68
+Protect peatland,REDDpeat,30,pulse,0,2021,2027,89
+Protect salt marsh,REDDsalt,50,pulse,0,2021,2026.5,64
+Protect seagrass,REDDseag,30,pulse,0,2021,2026.5,67
+Reforestation,Refo,0,linear,8,2023,2055,25
+Rice management,Rice,0,constant,0,2024,2040,100
+Salt marsh restoration,Salt,0,linear,10,2024,2052,57
+Seagrass restoration,Seagrass,0,linear,5,2024,2052,51
