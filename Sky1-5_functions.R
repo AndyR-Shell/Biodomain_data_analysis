@@ -311,8 +311,8 @@ Annual_NBS_potentials = function(run_name = NULL,
   
   if(print_messages) cat(paste0("- RUN COMPLETED SUCCESSFULLY \n    Run Name: '", run_name, "'\n\n"))
   if(output_area_data){ # If that section was run, save to environment
-    if(print_messages) cat("- ADOPTION DATASET SAVED TO THE GLOBAL ENVIRONMENT IN R \n  Important note: \n    All values in this adoption dataset are in Millions of hectares (Mha). But, some have been converted from Mha/yr. \n    As a result, this 'converted' dataset cannot be used to back-calculate the main TER output dataset.")
-    assign("adoption_alldata", adoption_alldata, envir = .GlobalEnv) # Output the resulting calculation
+    if(print_messages) cat("- ADOPTION DATASET SAVED TO THE GLOBAL ENVIRONMENT IN R \n  Important note: \n    All values in this adoption dataset are in Millions of hectares (Mha). But, some have been converted from Mha/yr. \n    As a result, this 'converted' dataset cannot be used to back-calculate the main TER output dataset.\n\n")
+    assign(paste0("adoption_alldata_", run_name), adoption_alldata, envir = .GlobalEnv) # Output the resulting calculation
   } # End of if statement
   return(TERs_alldata) # Output the dataset from this analysis
   
