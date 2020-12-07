@@ -18,7 +18,7 @@ Protect mangrove,REDDmang,20,pulse,0,2021,2026,68
 Protect peatland,REDDpeat,30,pulse,0,2021,2026,89
 Protect salt marsh,REDDsalt,50,pulse,0,2021,2026,64
 Protect seagrass,REDDseag,30,pulse,0,2021,2026,67
-Reforestation,Refo,0,linear,8,2021,2031,25
+Reforestation,Refo,0,linear,8,2021,2041,25
 Rice management,Rice,0,constant,0,2025,2042,100
 Salt marsh restoration,Salt,0,linear,10,2024,2052,57
 Seagrass restoration,Seagrass,0,linear,5,2024,2052,51
